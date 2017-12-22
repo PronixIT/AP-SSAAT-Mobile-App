@@ -1,0 +1,328 @@
+<resources>
+    <string name="app_name">SSAAT</string>
+    <string name="nonetwork">&#xf1eb;</string>
+    <string name="fontawsome">fontawesome.ttf</string>
+    <string name="headerfontname">Dayswebfont.ttf</string>
+    <string name="contentfontname">Roboto.ttf</string>
+    <string name="we_are_facing_internet_connection_problem">We are facing Internet Connection Problem .</string>
+    <string name="network_error">NetWork Error !</string>
+    <string name="please_check_your_network_connection_and_trya_again">Please check your Network Connection and trya again</string>
+    <string name="ok_got_it">Ok,Got It</string>
+    <string name="you_are_not_a_logged_user">You are not a logged user</string>
+    <string name="please_login_to_get_more_features_in_our_service">please login to get more features in our service</string>
+    <string name="do_you_want_to_login_now">Do you want to login Now. ??</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="back">&#xf053;</string>
+    <string name="close">&#xf00d;</string>
+    <string name="loading">Loading please wait untill finish ..</string>
+    <string name="navigationicon">&#xf041;</string>
+    <string name="book">&#xf02e;</string>
+    <string name="exception">Exception</string>
+    <string name="response_error">Response Error</string>
+    <string name="error_title">Error title .</string>
+    <string name="error_mesage">Error Mesage</string>
+    <string name="retry">Retry</string>
+    <string name="rightarrow">&#xf105;</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="door_door_audit">Door To Door Audit</string>
+    <string name="_401">401</string>
+
+    <string-array name="cat">
+        <item>Muster Related</item>
+        <item>Work Related</item>
+        <item>Payment Related</item>
+    </string-array>
+
+    <string-array name="subcatone">
+        <item>Benami</item>
+        <item>Excess man days </item>
+        <item>Fake muster rolls </item>
+        <item>Addition of names and mandays in muster after closing </item>
+        <item>Deletion of names and mandays in muster after closing</item>
+
+    </string-array>
+
+    <string-array name="subcattwo">
+        <item>Machinery used </item>
+        <item>Without Estimation work was done</item>
+        <item>Payment made in other work ID</item>
+        <item>Work Changed</item>
+        <item>Advance payment not settled</item>
+        <item>Work was  done on contract basis</item>
+        <item>Ghost work </item>
+        <item>Deviation in the sanctioned works from sanctioned estimates </item>
+        <item>Change in location</item>
+        <item>Change in beneficiary </item>
+        <item>Wrong  selection of site  </item>
+        <item>Excess measurement with check measurement </item>
+        <item>Excess measurement  with out  check measurement </item>
+        <item>Excess Material bills with check measurement </item>
+        <item>Excess Material bills with out check measurement </item>
+        <item>Duplication of work including rebooking expenditure of old works under NREGS </item>
+        <item>Wrong caliculations </item>
+        <item>Recording excess distance for meterial transportation (lead)</item>
+        <item>Recording benami suppliers name  (Including tractor owners)</item>
+        <item>Accepting supply of material from a supplier in violation of the rules </item>
+        <item>payment with out work with recording MB </item>
+        <item>Splitting of works </item>
+        <item>Bad work/Poor  quality </item>
+        <item>Payment made with out MB </item>
+        <item>Payment made with work but with out MB </item>
+
+
+    </string-array>
+
+    <string-array name="subcatthree">
+        <item>Addition of names in pay order</item>
+        <item>Excess man days given in pay order </item>
+        <item>Tampering measurements in generating work done report </item>
+        <item>Generating of work done report with out Mbook</item>
+        <item>Generating of payorder with out muster </item>
+        <item>Fingerprints taken  but not paid </item>
+        <item> Bribe collected from wage-seekers</item>
+        <item>Partial payments done</item>
+        <item>Paying excess for Material</item>
+        <item>Payment not made </item>
+        <item>No Material work at site but recorded and paid amount</item>
+
+    </string-array>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Telugu</item>
+
+    </string-array>
+
+    <string-array name="districts">
+        <item>District</item>
+        <item>Srikakulam</item>
+
+    </string-array>
+
+    <string-array name="mandals">
+        <item>Mandal</item>
+        <item>Kotabommili</item>
+
+    </string-array>
+    <string-array name="villages">
+        <item>Village</item>
+        <item>Chittivalasa</item>
+
+    </string-array>
+
+    <string-array name="panchayats">
+        <item>Panchayat</item>
+        <item>Chittivalasa</item>
+
+    </string-array>
+
+    <string-array name="habitations">
+        <item>Habitation</item>
+        <item>Chavitipeta</item>
+        <item>Chittivalasa</item>
+        <item>Bagirathipuram</item>
+        <item>Tulasipeta</item>
+    </string-array>
+
+    <string-array name="designations">
+        <item>Select Designation</item>
+        <item>SRP</item>
+        <item>DRP</item>
+
+    </string-array>
+
+    <string-array name="maincategories">
+        <item>Financial</item>
+        <item>Procedural</item>
+        <item>Information</item>
+        <item>Grievances</item>
+    </string-array>
+
+    <string-array name="Category1">
+        <item>Muster related</item>
+        <item>Work related </item>
+        <item>Payment related</item>
+    </string-array>
+
+    <string-array name="Category2">
+        <item>Muster related</item>
+        <item>Work related </item>
+        <item>Payment related</item>
+        <item>Job card related </item>
+    </string-array>
+    <string-array name="Category3">
+        <item>Information</item>
+    </string-array>
+    <string-array name="Category4">
+        <item>JC related</item>
+        <item>Work related </item>
+    </string-array>
+
+    <string-array name="IssueCategory11">
+        <item>Benami</item>
+        <item>Excess man days</item>
+        <item>Fake muster rolls</item>
+        <item>Addition of names and mandays in muster after closing</item>
+        <item>Deletion of names and mandays in muster after closing</item>
+    </string-array>
+
+
+    <string-array name="IssueCategory12">
+        <item>Machinery used</item>
+        <item>Without Estimation work was done</item>
+        <item>Payment made in other work ID</item>
+        <item>Work Changed</item>
+        <item>Advance payment not settled</item>
+        <item>Work was  done on contract basis</item>
+        <item>Ghost work</item>
+        <item>Deviation in the sanctioned works from sanctioned estimates</item>
+        <item>Change in location</item>
+        <item>Change in beneficiary</item>
+        <item>Wrong  selection of site</item>
+        <item>Excess measurement with check measurement</item>
+        <item>Excess measurement  with out  check measurement</item>
+        <item>Excess Material bills with check measurement</item>
+        <item>Excess Material bills with out check measurement</item>
+        <item>Duplication of work including rebooking expenditure of old works under NREGS</item>
+        <item>Wrong caliculations</item>
+        <item>Recording excess distance for meterial transportation (lead)</item>
+        <item>Recording benami suppliers name  (Including tractor owners)</item>
+        <item>Accepting supply of material from a supplier in violation of the rules</item>
+        <item>payment with out work with recording MB</item>
+        <item>Splitting of works</item>
+        <item>Bad work/Poor  quality</item>
+        <item>Payment made with out MB</item>
+        <item>Payment made with out check measurement</item>
+        <item>Payment made with work but with out MB</item>
+        <item>Task Changed</item>
+        <item>No Toewal constructed</item>
+        <item>Farmers closed the work</item>
+        <item>No name boards at works site</item>
+        <item>Wrong identification of beneficiaries</item>
+        <item>Qty Difference in MB to work done</item>
+        <item>QTY Difference in Muster to work done</item>
+        <item>Road roller not used but claimed</item>
+        <item>Deviation as per Quality Control and SA team difference</item>
+    </string-array>
+
+    <string-array name="IssueCategory13">
+        <item> Addition of names in pay order</item>
+        <item> Excess man days given in pay order</item>
+        <item>Tampering measurements in generating work done report</item>
+        <item> Generating of work done report with out Mbook</item>
+        <item> Generating of payorder with out muster</item>
+        <item> Fingerprints taken  but not paid</item>
+        <item> Bribe collected from wage-seekers</item>
+        <item> Partial payments done</item>
+        <item> Paying excess for Material</item>
+        <item> Machinary not used but claimed</item>
+        <item> Payment not made</item>
+        <item> No Material work at site but recorded and paid amount</item>
+    </string-array>
+
+    <string-array name="procedural1">
+        <item> Muster not maintained properly</item>
+        <item> Less mandays given in muster</item>
+        <item> No dates on MR</item>
+        <item> Sign mismatch on MR</item>
+        <item> No sign or thumb print of wage seekers on MR</item>
+        <item> No sign of respective authority on musters</item>
+        <item> Muster not being recorded at the work place</item>
+        <item> Non submission of records to the SA team</item>
+        <item> Under age</item>
+        <item> Forgery and tampering of records</item>
+    </string-array>
+    <string-array name="procedural2">
+        <item> Failure to give correct mark outs</item>
+        <item> Pre Measurement Not Recorded</item>
+        <item> MBOOK  not maintained properly</item>
+        <item> No signature on MB of Wageseekers  and  farmers</item>
+        <item> Material Difference in quality</item>
+        <item>No sighn of check measurement officer</item>
+        <item>Non performance of duties assigned by authority</item>
+        <item>No demand capture</item>
+        <item>Failure to maintain shelf of works</item>
+        <item>Not providing work site facilities</item>
+        <item>Request for Exgratia but not honored</item>
+        <item>Utilization certificate not given</item>
+        <item>Less measurement recorded</item>
+        <item> No deduction of voids</item>
+        <item> EGS Staff playing as Duel role</item>
+        <item> Staff refused to shown the works</item>
+        <item> No sign of respective authority on records</item>
+    </string-array>
+    <string-array name="procedural3">
+        <item>less man days given in pay order</item>
+        <item>Account number entered wrongly</item>
+        <item>Allowances was not paid</item>
+        <item>Wrong Vehicle Numbers</item>
+        <item>Payment done manually with FA/Mates</item>
+        <item>Generation of pay order with out pass order by APO/MPDO</item>
+        <item> Delayed payments</item>
+        <item> Disbursement of payment made to single person</item>
+        <item> Money collection for issuing postal pass books</item>
+        <item>Money collection for issuing smart cards</item>
+        <item>Money collection for issuing bank passs books</item>
+        <item> CSP related to EGS staff or political family</item>
+        <item> Payment not made due to 100 days completed</item>
+        <item> Payment not made due to no name in the demand capture</item>
+        <item> Name in muster role but pay order not generated.</item>
+        <item> Money sent but CSP/BPM  didn’t disbursed</item>
+        <item> No name in SSS group</item>
+        <item> No payslips</item>
+
+    </string-array>
+    <string-array name="procedural4">
+        <item>Not updating job cards</item>
+        <item>Money collection for issuing Job cards</item>
+        <item>Other names/ Family members have been written on JC</item>
+        <item> JC/AC with EGS Staff</item>
+        <item> FA not available to WS</item>
+        <item> FA post Vacant</item>
+        <item> Mates not availble to WS</item>
+        <item> Pay slips not disbursed to WS/ not pasted on JC</item>
+    </string-array>
+
+    <string-array name="information1">
+        <item>Expenditure Details</item>
+        <item>Works usefull</item>
+        <item> FA availabe to WS</item>
+        <item> Awareness on EGS works</item>
+        <item> No awareness on EGS works</item>
+        <item>Collecting demand capture</item>
+        <item>Job card details</item>
+        <item> Exception Report Details</item>
+        <item> Issues resolved in SA process</item>
+        <item> Independent Observer attended</item>
+        <item>Independent Observer not attended</item>
+        <item> SSS group details</item>
+        <item> Works and measurement details</item>
+        <item> Plantation details</item>
+        <item> Others</item>
+    </string-array>
+
+    <string-array name="grievances1">
+        <item>Requested for new/duplicate JC but not issued</item>
+        <item> Application for Job card</item>
+        <item> Request A/C book but not issued/ Delayed</item>
+        <item>No Enrollment for smart card</item>
+        <item>Wageseeker name need to add to SSS group/Job Card</item>
+        <item>Request for Smart Card but not issued/ Delayed</item>
+
+    </string-array>
+    <string-array name="grievances2">
+        <item>Exgratia not paid</item>
+        <item>Migration because of less/delayed payments</item>
+        <item> Medical bills not reimbursed</item>
+        <item> request for unemployment allowance</item>
+        <item> request for exgratia</item>
+        <item> Request for work - not provided</item>
+        <item> request for work</item>
+        <item> No shed</item>
+        <item> No first aid</item>
+        <item> No creche/No Aya</item>
+        <item> request for tools</item>
+        <item> Due to Finger prints mismatch payment not made</item>
+    </string-array>
+</resources>

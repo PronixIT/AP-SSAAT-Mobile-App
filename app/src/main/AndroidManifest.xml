@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yvs.ssaat">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SplashScreen"
+            android:theme="@style/MyMaterialTheme" >
+            <!--this is the launcher-->
+
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme">
+
+        </activity>
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.AuditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AuditDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.RecordVerificationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.WorkDetail"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.Works"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.CSVParsing"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.RecordVerificationDetail"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.DoortoDoorAtivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.DDdetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.Format4A"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.Format5A"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.IssueDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.DatasyncActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.ReportsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".activities.DoorVerificationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".activities.Format4ARow" />
+        <activity android:name=".activities.Format5ARow"></activity>
+    </application>
+
+</manifest>

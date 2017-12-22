@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="#ff0173ba">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/workIdTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="#ff00adef"
+                android:visibility="gone"
+                android:text="1"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/workCardId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="000101"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/skillTypeTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="కోటా దావీదు"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/taskCodeTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="BANK-CBS-31 87253807"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/taskNameTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:text="171595()/NADEP Compost Pit/Vijayalakshmi kota"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/taskRateTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="19-Nov-2016"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/quantityTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="920161705663"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/amtTxt1"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="1"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/preQuantityTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:text="79"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/preAmtTxt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittextborder"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/mainCategorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittextborder"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/subCategorySpinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittextborder"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/subCategorySpinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/updateWorkerDetails"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="update"
+                android:background="@drawable/square_fill_button"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

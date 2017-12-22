@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0173ba"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Format-5A"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="క్రమ సంఖ్యా"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/sno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="పని గుర్తింపు సంఖ్యా"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/workIdNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="పని పేరు / పని స్థలము"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/workNameLoc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="టాస్క్ /పని వివరాలు"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/work_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="నైపుణ్య రకం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/naipunyaRakam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="అనుమతి (ఎస్టిమేట్) ప్రకారం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/permission"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="పరిమాణం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/parimaanam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="మొత్తం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="రిపోర్టు (MB ) ప్రకారం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/reportWise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="పరిమాణం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/reportsParimanam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="మొత్తం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/reportsTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="పని స్థలం వద్దు పని జరిగిందా?"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/isJobDoneAtLoc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="క్షేత్ర స్థాయి పరిశీలన ప్రకారం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/higherLevelVerificationWise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="పరిమాణం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/higherLevelVerificationWiseParimanam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="మొత్తం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/higherLevelVerificationWiseTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="వేతనం చేస్తున్నారా లేదా ?"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/isAmtPaidOrNot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="తేడా"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/differenceInAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="హోదా"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/hodha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="పరిమాణం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/hodhaParimanam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="మొత్తం"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/hodhaTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="బాధ్యుతలైన వారి పేరు"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="start"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/responsiblePersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:background="@android:drawable/edit_text"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_save_format5a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:hint="Save"
+            android:textColor="#506829"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_check_format5a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:hint="Check"
+            android:textColor="#506829"
+            android:textColorHint="@color/white" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

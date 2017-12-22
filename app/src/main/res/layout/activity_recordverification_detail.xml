@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff0173ba"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Record Verificaton Details"
+        android:textColor="#fff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:orientation="vertical"
+            tools:context="com.naveen.testproject.WorkDetail">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Aadhar Number"
+                    android:textColor="#ff0173ba" />
+
+                <RadioGroup
+                    android:id="@+id/rado_group_aadhar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/adhar_yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="false"
+                        android:text="YES" />
+
+                    <RadioButton
+                        android:id="@+id/adhar_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="NO" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_denim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_thin_stroke_background_white"
+                android:hint="Enter Aadhar Number"
+                android:padding="10dp"
+                android:textColorHint="@color/grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Ration Card No"
+                    android:textColor="#ff0173ba" />
+
+                <RadioGroup
+                    android:id="@+id/rado_group_ration"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/ration_yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="false"
+                        android:text="YES" />
+
+                    <RadioButton
+                        android:id="@+id/ration_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="NO" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_ration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_thin_stroke_background_white"
+                android:hint="Enter Ration Card Number"
+                android:padding="10dp"
+                android:textColorHint="@color/grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Work Id"
+                    android:textColor="#ff0173ba" />
+
+                <RadioGroup
+                    android:id="@+id/rado_group_workid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/work_yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="false"
+                        android:text="YES" />
+
+                    <RadioButton
+                        android:id="@+id/work_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="NO" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_workidno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_thin_stroke_background_white"
+                android:hint="Enter Job Id Number"
+                android:padding="10dp"
+                android:textColorHint="@color/grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Issue"
+                    android:textColor="#ff0173ba" />
+
+                <RadioGroup
+                    android:id="@+id/rado_group_issue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/issue_yes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="false"
+                        android:text="YES" />
+
+                    <RadioButton
+                        android:id="@+id/issue_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="NO" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_thin_stroke_background_white"
+                android:hint="Enter Issue Details"
+                android:padding="10dp"
+                android:textColorHint="@color/grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_fill_button"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Save"
+                    android:textColor="#506829"
+                    android:textColorHint="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
