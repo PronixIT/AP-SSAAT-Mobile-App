@@ -24,7 +24,6 @@ public class Format4A extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_format4, frame_base);
-
         sno = (EditText) findViewById(R.id.sno);
         upadiCardNumber = (EditText) findViewById(R.id.upadiCardNumber);
         fullname = (EditText) findViewById(R.id.fullname);
@@ -79,10 +78,11 @@ public class Format4A extends BaseActivity {
 
     private void saveFormat4AtoDB() {
         String insertSQL = "INSERT INTO format4A \n" +
-                "(musterId,sno,upadiCardNumber ,fullname,po_ba,work_details,tillLastWeek,payOrderNumber,workNumber,amtPaid, actualWorkedDays," +
-                "actualAmtPaid,differenceInAmt,cooliePassbookYesOrNo,AmtPayingOrNot,responsiblePersonName,hodha)\n" +
+                "(sno, wageSeekerId ,fullname, postBank, work_details,work_duration,payOrderRelDate, musterId, workedDays, amtToBePaid, actualWorkedDays," +
+                "actualAmtPaid,differenceInAmt,isJobCardAvail,isPassbookAvail,isPayslipIssued,respPersonName,respPersonDesig," +
+                "categoryone,categorytwo,categorythree)\n" +
                 "VALUES \n" +
-                "(?, ?, ?,?,?, ?, ?,?,?, ?, ?,?, ?, ?,?,?, ?);";
+                "(?, ?, ?,?,?, ?, ?,?,?, ?, ?,?, ?, ?,?,?, ?,?,?,?,?);";
         mDatabase.execSQL(insertSQL, new String[]{musterId.getText().toString(), sno.getText().toString(), upadiCardNumber.getText().toString(),
                 fullname.getText().toString(), po_ba.getText().toString(), work_details.getText().toString(), tillLastWeek.getText().toString(),
                 payOrderNumber.getText().toString(), workNumber.getText().toString(), amtPaid.getText().toString(), actualWorkedDays.getText().toString(),
@@ -91,26 +91,31 @@ public class Format4A extends BaseActivity {
     }
 
     private void createFormat4ATable() {
+
         mDatabase.execSQL(
                 "CREATE TABLE IF NOT EXISTS format4A (\n" +
                         "    id INTEGER NOT NULL CONSTRAINT employees_pk PRIMARY KEY AUTOINCREMENT,\n" +
-                        "    musterId varchar(200) NOT NULL,\n" +
                         "    sno varchar(200) NOT NULL,\n" +
-                        "    upadiCardNumber varchar(200) NOT NULL,\n" +
+                        "    wageSeekerId varchar(200) NOT NULL,\n" +
                         "    fullname varchar(200) NOT NULL,\n" +
-                        "    po_ba varchar(200) NOT NULL,\n" +
+                        "    postBank varchar(200) NOT NULL,\n" +
                         "    work_details varchar(200) NOT NULL,\n" +
-                        "    tillLastWeek varchar(200) NOT NULL,\n" +
-                        "    payOrderNumber varchar(200) NOT NULL,\n" +
-                        "    workNumber varchar(200) NOT NULL,\n" +
-                        "    amtPaid varchar(200) NOT NULL,\n" +
+                        "    work_duration varchar(200) NOT NULL,\n" +
+                        "    payOrderRelDate varchar(200) NOT NULL,\n" +
+                        "    musterId varchar(200) NOT NULL,\n" +
+                        "    workedDays varchar(200) NOT NULL,\n" +
+                        "    amtToBePaid varchar(200) NOT NULL,\n" +
                         "    actualWorkedDays varchar(200) NOT NULL,\n" +
                         "    actualAmtPaid varchar(200) NOT NULL,\n" +
                         "    differenceInAmt varchar(200) NOT NULL,\n" +
-                        "    cooliePassbookYesOrNo varchar(200) NOT NULL,\n" +
-                        "    AmtPayingOrNot varchar(200) NOT NULL,\n" +
-                        "    responsiblePersonName varchar(200) NOT NULL,\n" +
-                        "    hodha varchar(200) NOT NULL\n" +
+                        "    isJobCardAvail varchar(200) NOT NULL,\n" +
+                        "    isPassbookAvail varchar(200) NOT NULL,\n" +
+                        "    isPayslipIssued varchar(200) NOT NULL,\n" +
+                        "    respPersonName varchar(200) NOT NULL,\n" +
+                        "    respPersonDesig varchar(200) NOT NULL,\n" +
+                        "    categoryone varchar(200) NOT NULL,\n" +
+                        "    categorytwo varchar(200) NOT NULL,\n" +
+                        "    categorythree varchar(200) NOT NULL\n" +
                         ");"
         );
 

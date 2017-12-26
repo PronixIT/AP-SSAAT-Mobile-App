@@ -40,21 +40,18 @@ public class AuditDetailsActivity extends BaseActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
                     case 0:
-
                         intent = new Intent(AuditDetailsActivity.this, DoortoDoorAtivity.class);
                         startActivity(intent);
                         AuditDetailsActivity.this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         break;
 
                     case 1:
-
-                        intent = new Intent(AuditDetailsActivity.this, Format5ARow.class);
+                        intent = new Intent(AuditDetailsActivity.this, DoortoDoorF5Ativity.class);
                         startActivity(intent);
                         AuditDetailsActivity.this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         break;
 
                     case 2:
-
                         intent = new Intent(AuditDetailsActivity.this, RecordVerificationActivity.class);
                         startActivity(intent);
                         AuditDetailsActivity.this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
@@ -71,8 +68,6 @@ public class AuditDetailsActivity extends BaseActivity {
                         startActivity(intent);
                         AuditDetailsActivity.this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 */
-
-
                         AlertDialog.Builder alertDialog = new AlertDialog.Builder(AuditDetailsActivity.this);
                         alertDialog.setTitle("SSAAT");
 
@@ -89,8 +84,6 @@ public class AuditDetailsActivity extends BaseActivity {
 
                         alertDialog.show();
                         break;
-
-
                 }
             }
         });

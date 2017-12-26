@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.v7.widget.AppCompatTextView
@@ -41,11 +40,11 @@
                     android:layout_marginLeft="10dp"
                     android:layout_weight="0.5"
                     android:padding="10dp"
-                    android:text="Work Card ID *"
+                    android:text="Household Code *"
                     android:textColor="#ff0173ba" />
 
                 <EditText
-                    android:id="@+id/workIdNumber"
+                    android:id="@+id/householdCode"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"

@@ -23,7 +23,13 @@
         <activity
             android:name=".activities.LoginActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@style/MyMaterialTheme" />
+            android:theme="@style/MyMaterialTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -38,11 +44,7 @@
             android:name=".activities.AuditActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/MyMaterialTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activities.AuditDetailsActivity"
@@ -104,8 +106,15 @@
             android:name=".activities.DoorVerificationActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/MyMaterialTheme" />
-        <activity android:name=".activities.Format4ARow" />
-        <activity android:name=".activities.Format5ARow"></activity>
+        <activity android:name=".activities.Format4ARow"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme"/>
+        <activity android:name=".activities.Format5ARow"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme"/>
+        <activity android:name=".activities.DoortoDoorF5Ativity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MyMaterialTheme"/>
     </application>
 
 </manifest>

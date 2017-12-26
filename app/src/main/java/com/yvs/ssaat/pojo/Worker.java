@@ -5,15 +5,16 @@ package com.yvs.ssaat.pojo;
  */
 
 public class Worker {
-    private String district_code, mandal_code, panchayat_code, village_code, habitation_code, ssaat_code,
+    private String sno, district_code, mandal_code, panchayat_code, village_code, habitation_code, ssaat_code,
             household_code, worker_code, surname, name, account_no, work_code, work_name, work_location,
             work_progress_code, from_date, to_date, days_worked, amount_paid, payment_date, audit_payslip_date,
             muster_id;
 
-    public Worker(String district_code, String mandal_code, String panchayat_code,String village_code,String habitation_code,String ssaat_code,
+    public Worker(String sno,String district_code, String mandal_code, String panchayat_code,String village_code,String habitation_code,String ssaat_code,
                   String household_code,String worker_code,String surname,String name,String account_no,String work_code,String work_name,
                   String work_location, String work_progress_code,String from_date,String to_date,String days_worked,
                   String amount_paid, String payment_date,String audit_payslip_date, String muster_id){
+        this.sno = sno;
         this.district_code = district_code;
         this.mandal_code = mandal_code;
         this.panchayat_code = panchayat_code;
@@ -36,6 +37,14 @@ public class Worker {
         this.payment_date = payment_date;
         this.audit_payslip_date = audit_payslip_date;
         this.muster_id = muster_id;
+    }
+
+    public String getSno() {
+        return sno;
+    }
+
+    public void setSno(String sno) {
+        this.sno = sno;
     }
 
     public String getDistrict_code() {

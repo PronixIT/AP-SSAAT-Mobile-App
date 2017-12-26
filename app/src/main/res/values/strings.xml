@@ -268,7 +268,7 @@
         <item> Payment not made due to 100 days completed</item>
         <item> Payment not made due to no name in the demand capture</item>
         <item> Name in muster role but pay order not generated.</item>
-        <item> Money sent but CSP/BPM  didn’t disbursed</item>
+        <item> Money sent but CSP/BPM  didnâ€™t disbursed</item>
         <item> No name in SSS group</item>
         <item> No payslips</item>
 
