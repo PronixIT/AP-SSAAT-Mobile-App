@@ -26,7 +26,11 @@
     <string name="rightarrow">&#xf105;</string>
     <string name="view_all"><u>View All</u></string>
     <string name="door_door_audit">Door To Door Audit</string>
+    <string name="work_site_audit">Work Site Audit</string>
     <string name="_401">401</string>
+    <string name="exit">Press back again to exit</string>
+    <string name="upload_csv">Upload CSV</string>
+    <string name="start_Audit">Start Audit</string>
 
     <string-array name="cat">
         <item>Muster Related</item>
@@ -129,10 +133,16 @@
         <item>Select Designation</item>
         <item>SRP</item>
         <item>DRP</item>
+    </string-array>
 
+    <string-array name="audittypes">
+        <item>Upload file for: </item>
+        <item>Door To Door</item>
+        <item>Work Site</item>
     </string-array>
 
     <string-array name="maincategories">
+        <item>No issue</item>
         <item>Financial</item>
         <item>Procedural</item>
         <item>Information</item>
@@ -140,26 +150,31 @@
     </string-array>
 
     <string-array name="Category1">
+        <item>No issue</item>
         <item>Muster related</item>
         <item>Work related </item>
         <item>Payment related</item>
     </string-array>
 
     <string-array name="Category2">
+        <item>No issue</item>
         <item>Muster related</item>
         <item>Work related </item>
         <item>Payment related</item>
         <item>Job card related </item>
     </string-array>
     <string-array name="Category3">
+        <item>No issue</item>
         <item>Information</item>
     </string-array>
     <string-array name="Category4">
+        <item>No issue</item>
         <item>JC related</item>
         <item>Work related </item>
     </string-array>
 
     <string-array name="IssueCategory11">
+        <item>No issue</item>
         <item>Benami</item>
         <item>Excess man days</item>
         <item>Fake muster rolls</item>
@@ -169,6 +184,7 @@
 
 
     <string-array name="IssueCategory12">
+        <item>No issue</item>
         <item>Machinery used</item>
         <item>Without Estimation work was done</item>
         <item>Payment made in other work ID</item>
@@ -207,6 +223,7 @@
     </string-array>
 
     <string-array name="IssueCategory13">
+        <item>No issue</item>
         <item> Addition of names in pay order</item>
         <item> Excess man days given in pay order</item>
         <item>Tampering measurements in generating work done report</item>
@@ -222,6 +239,7 @@
     </string-array>
 
     <string-array name="procedural1">
+        <item>No issue</item>
         <item> Muster not maintained properly</item>
         <item> Less mandays given in muster</item>
         <item> No dates on MR</item>
@@ -234,6 +252,7 @@
         <item> Forgery and tampering of records</item>
     </string-array>
     <string-array name="procedural2">
+        <item>No issue</item>
         <item> Failure to give correct mark outs</item>
         <item> Pre Measurement Not Recorded</item>
         <item> MBOOK  not maintained properly</item>
@@ -253,6 +272,7 @@
         <item> No sign of respective authority on records</item>
     </string-array>
     <string-array name="procedural3">
+        <item>No issue</item>
         <item>less man days given in pay order</item>
         <item>Account number entered wrongly</item>
         <item>Allowances was not paid</item>
@@ -274,6 +294,7 @@
 
     </string-array>
     <string-array name="procedural4">
+        <item>No issue</item>
         <item>Not updating job cards</item>
         <item>Money collection for issuing Job cards</item>
         <item>Other names/ Family members have been written on JC</item>
@@ -285,6 +306,7 @@
     </string-array>
 
     <string-array name="information1">
+        <item>No issue</item>
         <item>Expenditure Details</item>
         <item>Works usefull</item>
         <item> FA availabe to WS</item>
@@ -303,17 +325,19 @@
     </string-array>
 
     <string-array name="grievances1">
+        <item>No issue</item>
         <item>Requested for new/duplicate JC but not issued</item>
-        <item> Application for Job card</item>
-        <item> Request A/C book but not issued/ Delayed</item>
+        <item>Application for Job card</item>
+        <item>Request A/C book but not issued/ Delayed</item>
         <item>No Enrollment for smart card</item>
         <item>Wageseeker name need to add to SSS group/Job Card</item>
         <item>Request for Smart Card but not issued/ Delayed</item>
 
     </string-array>
     <string-array name="grievances2">
-        <item>Exgratia not paid</item>
-        <item>Migration because of less/delayed payments</item>
+        <item>No issue</item>
+        <item> Exgratia not paid</item>
+        <item> Migration because of less/delayed payments</item>
         <item> Medical bills not reimbursed</item>
         <item> request for unemployment allowance</item>
         <item> request for exgratia</item>
@@ -325,4 +349,59 @@
         <item> request for tools</item>
         <item> Due to Finger prints mismatch payment not made</item>
     </string-array>
+
+    <string-array name="yesno">
+        <item>Yes</item>
+        <item>No</item>
+
+    </string-array>
+
+
+    <!--Laungauges-->
+    <string name="Login">Access</string>
+    <string name="MGNREGA">MGNREGA</string>
+
+
+    <!--format4a-->
+    <string name="sNo">S.No</string>
+    <string name="jobSeekerId">Job Seeker Id (or) Wage Seeker Id</string>
+    <string name="fullName">Full Name</string>
+    <string name="POorBAD">Post Office / Bank Account Details</string>
+    <string name="WorkDetails">Work Details / Work Id / Work Name / Work Location</string>
+    <string name="workDuration">Work Duration from - to</string>
+    <string name="payOrderReleaseDate">Pay-order Release Date</string>
+    <string name="musterId">Muster Id Number</string>
+    <string name="noOfWorkingDays">No of Working Days</string>
+    <string name="AmtToBePaid">Amount to be Paid</string>
+    <string name="actualNoOfdaysWorked">Actual No of days Worked</string>
+    <string name="actualPaidAmt">Actual Paid Amount</string>
+    <string name="diffInAmtPaid">Difference in Amount Paid</string>
+    <string name="isJobCardIdAvai">Is Job Card Id is available with J0ob-Seekers(Yes/No)</string>
+    <string name="isPassbookisAvailable">Is Passbook is available with Job-Seekers(Yes/No)</string>
+    <string name="paySlipsIssuing">PaySlips are issuing(Yes/No)</string>
+    <string name="resPersonName">Responsible Person Name</string>
+    <string name="resPersonJobDesg">Responsible Person Job Designation</string>
+    <string name="category1">Category-I</string>
+    <string name="category2">Category-II</string>
+    <string name="category3">Category-III</string>
+    <string name="comments">Comments</string>
+
+
+    <!--formate5A-->
+    <string name="workId">Work Id</string>
+    <string name="workNameorLocation">Work Name / Work Location</string>
+    <string name="taskDetails">Task Details</string>
+    <string name="technologyType">Technology Type</string>
+    <string name="approvedEstvalues">Approved Estimation values</string>
+    <string name="measurments">Measurements</string>
+    <string name="total">Total</string>
+    <string name="asPerMBReporrt">As Per MB Report</string>
+    <string name="isWorkDone">Is Work done at work place(Yes/No)</string>
+    <string name="checkingValues">Checking Values</string>
+    <string name="difference">Difference</string>
+    <string name="impOfWork">Importance of Work</string>
+
+
+
+
 </resources>

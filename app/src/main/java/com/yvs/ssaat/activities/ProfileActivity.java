@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.yvs.ssaat.R;
+import com.yvs.ssaat.common.Constants;
 
 public class ProfileActivity extends BaseActivity {
     private TextView user_profile_name, txt_designation, txt_email, txt_mobilenumber, txt_pin;
@@ -32,11 +33,11 @@ public class ProfileActivity extends BaseActivity {
         String number = sharedpreferences.getString("number", null);
         String designation = sharedpreferences.getString("designation", null);
         int pin = sharedpreferences.getInt("pin", 0);
-        user_profile_name.setText(name);
-        txt_designation.setText(designation);
-        txt_email.setText(email);
-        txt_mobilenumber.setText(number);
-        txt_pin.setText(String.valueOf(pin));
+        user_profile_name.setText(Constants.userMasterDO.userName);
+        txt_designation.setText(Constants.userMasterDO.designation);
+        txt_email.setText(Constants.userMasterDO.email);
+        txt_mobilenumber.setText(Constants.userMasterDO.mobileNumber);
+        txt_pin.setText(Constants.PIN);
 
     }
 }

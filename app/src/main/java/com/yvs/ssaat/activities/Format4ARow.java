@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.yvs.ssaat.R;
+import com.yvs.ssaat.db.DBManager;
 import com.yvs.ssaat.models.WorkersAdapter4A;
 import com.yvs.ssaat.pojo.Worker;
 
@@ -19,7 +21,6 @@ import java.util.ArrayList;
  * Created by NAVEEN KS on 12/20/2017.
  */
 
-
 public class Format4ARow extends AppCompatActivity {
     SQLiteDatabase mDatabase;
     private ArrayList<Worker> checkList = new ArrayList<Worker>();
@@ -28,11 +29,14 @@ public class Format4ARow extends AppCompatActivity {
     RecyclerView rcyVw_workers;
     WorkersAdapter4A mAdapter;
     Context mCon = this;
+    TextView tv_sNo, tv_JobSeekerId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_format4_arow);
+        initializeControls();
+        setTitleTexts();
         rcyVw_workers = (RecyclerView) findViewById(R.id.rcyVw_workers);
         bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -112,7 +116,6 @@ public class Format4ARow extends AppCompatActivity {
                 "",
                 ""));*/
 
-
         mAdapter = new WorkersAdapter4A(mCon, checkList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         rcyVw_workers.setLayoutManager(mLayoutManager);
@@ -127,7 +130,7 @@ public class Format4ARow extends AppCompatActivity {
         //opening the database
         mDatabase = openOrCreateDatabase(CSVParsing.DATABASE_NAME, MODE_PRIVATE, null);
         //we used rawQuery(sql, selectionargs) for fetching all the employees
-        Cursor cursorEmployees = mDatabase.rawQuery("SELECT * FROM employees WHERE household_code IN ('" + householdCode + "')", null);
+        Cursor cursorEmployees = DBManager.getInstance().getRawQuery("SELECT * FROM employees WHERE household_code IN ('" + householdCode + "')");
         //if the cursor has some data
         if (cursorEmployees.moveToFirst()) {
             int count = 1;
@@ -178,5 +181,17 @@ public class Format4ARow extends AppCompatActivity {
             Toast.makeText(Format4ARow.this, "No data found for this work card ID", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void initializeControls()
+    {
+        tv_sNo = (TextView) findViewById(R.id.tv_Id);
+        tv_JobSeekerId = (TextView) findViewById(R.id.tv_jobSeekerId);
+    }
+
+    public void setTitleTexts()
+    {
+//        tv_sNo.setText(R.string.sNo);
+//        tv_JobSeekerId.setText(R.string.jobSeekerId);
     }
 }

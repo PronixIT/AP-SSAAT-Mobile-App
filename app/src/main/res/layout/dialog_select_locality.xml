@@ -107,6 +107,23 @@
             android:entries="@array/habitations" />
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextborder"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/selectAuditType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/audittypes" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/uploadCSV"
         android:layout_width="match_parent"

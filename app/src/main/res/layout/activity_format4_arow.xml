@@ -48,6 +48,7 @@
                             android:background="#ff00adef">
 
                             <TextView
+                                android:id="@+id/tv_Id"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="3dp"
@@ -64,6 +65,7 @@
                                 android:background="#fff" />
 
                             <TextView
+                                android:id="@+id/tv_jobSeekerId"
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="3dp"
@@ -394,6 +396,22 @@
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="3dp"
                                 android:paddingRight="3dp"
+                                android:text="Comments"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:typeface="sans" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#fff" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
                                 android:text=""
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
@@ -601,7 +619,7 @@
                                 android:background="#fff" />
 
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="60dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:paddingLeft="3dp"
@@ -751,6 +769,22 @@
                                 android:paddingLeft="3dp"
                                 android:paddingRight="3dp"
                                 android:text="2.1.20"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:textStyle="normal"
+                                android:typeface="sans" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#fff" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="2.1.21"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"

@@ -34,14 +34,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.7"
+        android:layout_weight="0.8"
         android:orientation="vertical"
         android:weightSum="1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.5"
+            android:layout_weight="0.33"
             android:orientation="horizontal"
             android:weightSum="1">
 
@@ -54,11 +54,12 @@
                 android:weightSum="1">
 
                 <TextView
+                    android:id="@+id/total_wage_seekers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:paddingTop="40dp"
+                    android:paddingTop="20dp"
                     android:text="0"
                     android:textColor="#FFF"
                     android:textSize="25sp"
@@ -76,11 +77,12 @@
                 android:weightSum="1">
 
                 <TextView
+                    android:id="@+id/total_areas_worked"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:paddingTop="40dp"
+                    android:paddingTop="20dp"
                     android:text="0"
                     android:textColor="#FFF"
                     android:textSize="25sp"
@@ -95,7 +97,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.5"
+            android:layout_weight="0.33"
             android:orientation="horizontal"
             android:weightSum="1">
 
@@ -103,16 +105,17 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:background="@drawable/threee"
+                android:background="@drawable/four"
                 android:orientation="vertical"
                 android:weightSum="1">
 
                 <TextView
+                    android:id="@+id/total_jobseeker_sync_records"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:paddingTop="40dp"
+                    android:paddingTop="20dp"
                     android:text="0"
                     android:textColor="#FFF"
                     android:textSize="25sp"
@@ -130,11 +133,12 @@
                 android:weightSum="1">
 
                 <TextView
+                    android:id="@+id/total_worksite_sync_records"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:paddingTop="40dp"
+                    android:paddingTop="20dp"
                     android:text="0"
                     android:textColor="#FFF"
                     android:textSize="25sp"
@@ -142,7 +146,71 @@
 
 
             </LinearLayout>
+
+
+
+
+
         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.33"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/threee"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/total_jobseeker_unsync_records"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="0"
+                    android:textColor="#FFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/threee"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/total_worksite_unsync_records"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="0"
+                    android:textColor="#FFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -153,13 +221,61 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <ImageView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <Button
+                android:id="@+id/upload_csv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/upload_csv"
+                android:background="#b43c32"
+                android:textColor="#fff"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/start_audit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/start_Audit"
+                android:background="#b43c32"
+                android:textColor="#fff"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <!--<ImageView
             android:id="@+id/img_upload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:src="@drawable/upload" />
+            android:src="@drawable/upload" />-->
 
     </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_fill_audit"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Start Audit"
+            android:textColor="#fff" />
+
+    </LinearLayout>-->
 </LinearLayout>

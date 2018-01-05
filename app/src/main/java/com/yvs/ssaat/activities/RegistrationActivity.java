@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,9 +14,14 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.yvs.ssaat.Dal.DalUserMaster;
 import com.yvs.ssaat.MainActivity;
 import com.yvs.ssaat.R;
+import com.yvs.ssaat.common.Constants;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 
@@ -27,12 +33,16 @@ public class RegistrationActivity extends AppCompatActivity {
     private SharedPreferences sharedpreferences;
     public static final String MyPREFERENCES = "MyPrefs";
     Spinner spnrDesignation;
+    DalUserMaster dalUserMaster;
+    SQLiteDatabase mDatabase;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        mDatabase = openOrCreateDatabase(Constants.SSAATDATABASE_NAME, MODE_PRIVATE, null);
+        dalUserMaster = new DalUserMaster();
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         _nameText = (EditText) findViewById(R.id.input_name);
         _emailText = (EditText) findViewById(R.id.input_email);
@@ -86,6 +96,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         // depending on success
                         Random random = new Random();
                         int value = random.nextInt(10000);
+                        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:SS");
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putString("name", name);
                         editor.putString("email", email);
@@ -94,7 +105,8 @@ public class RegistrationActivity extends AppCompatActivity {
                         editor.putString("designation", designation);
                         editor.putInt("pin", Integer.parseInt(password));
                         editor.commit();
-                        onSignupSuccess();
+                        long res = dalUserMaster.saveUserDetails(mDatabase, "", name, number, email, password, designation, dateFormat.format(new Date()));
+                        onSignupSuccess(res);
                         // onSignupFailed();
                         progressDialog.dismiss();
                     }
@@ -102,13 +114,17 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
 
-    public void onSignupSuccess() {
+    public void onSignupSuccess(long result) {
         _signupButton.setEnabled(true);
         setResult(RESULT_OK, null);
-        Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
-        startActivity(intent);
-        RegistrationActivity.this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-        finish();
+        if(result != -1) {
+            Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
+            startActivity(intent);
+            RegistrationActivity.this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            finish();
+        }
+        else
+            Toast.makeText(this, "Failed to create user", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -135,6 +151,12 @@ public class RegistrationActivity extends AppCompatActivity {
             input_number.setError("Please  enter 10 Digit mobile number");
             valid = false;
         } else {
+            String mobileNum = dalUserMaster.getMobile(mDatabase, number);
+            if(number.equals(mobileNum)) {
+                input_number.setError("Mobile number already exists");
+                valid = false;
+            }
+            else
             input_number.setError(null);
         }
 
@@ -154,6 +176,12 @@ public class RegistrationActivity extends AppCompatActivity {
             _passwordText.setError("Please enter 4 digit PIN");
             valid = false;
         } else {
+            String pin = dalUserMaster.getPin(mDatabase, password);
+            if(pin.equals(password)) {
+                _passwordText.setError("Please provide another pin");
+                valid = false;
+            }
+            else
             _passwordText.setError(null);
         }
 

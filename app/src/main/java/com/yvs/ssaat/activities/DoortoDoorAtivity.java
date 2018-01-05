@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.yvs.ssaat.R;
+import com.yvs.ssaat.db.DBManager;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,9 @@ public class DoortoDoorAtivity extends BaseActivity {
             }
         });
 
-        createFormat4ATable();
+
+        //Checking if items are there in Format4A table
+//        checkDataForm4aTable();
     }
 
     private void checkData() {
@@ -46,12 +49,13 @@ public class DoortoDoorAtivity extends BaseActivity {
         mDatabase = openOrCreateDatabase(CSVParsing.DATABASE_NAME, MODE_PRIVATE, null);
          String jobSeekerId  = householdCode.getText().toString();
         //we used rawQuery(sql, selectionargs) for fetching all the employees
-        Cursor cursorEmployees = mDatabase.rawQuery("SELECT * FROM employees WHERE household_code IN ('"+jobSeekerId+"')", null);
+        Cursor cursorEmployees = DBManager.getInstance().getRawQuery("SELECT * FROM employees WHERE household_code IN ('"+jobSeekerId+"')");
         //if the cursor has some data
         if (cursorEmployees.moveToFirst()) {
             //looping through all the records
             do {
                 checkList.add(cursorEmployees.getString(1));
+                break;
             } while (cursorEmployees.moveToNext());
         }
         //closing the cursor
@@ -72,13 +76,14 @@ public class DoortoDoorAtivity extends BaseActivity {
         //opening the database
         mDatabase = openOrCreateDatabase(CSVParsing.DATABASE_NAME, MODE_PRIVATE, null);
         //we used rawQuery(sql, selectionargs) for fetching all the employees
-        Cursor cursorFormat4A = mDatabase.rawQuery("SELECT * FROM format4A", null);
+        Cursor cursorFormat4A = DBManager.getInstance().getRawQuery("SELECT * FROM format4A");
         //if the cursor has some data
 
         if (cursorFormat4A.moveToFirst()) {
             //looping through all the records
             do {
-                checkList2.add(cursorFormat4A.getString(1));
+                checkList2.add(cursorFormat4A.getString(22));
+                System.out.println("in db date: "+cursorFormat4A.getString(22));
             } while (cursorFormat4A.moveToNext());
         }
         //closing the cursor
@@ -86,37 +91,5 @@ public class DoortoDoorAtivity extends BaseActivity {
         System.out.println("Format 4A Size: "+checkList2.size());
     }
 
-    private void createFormat4ATable() {
-        //Creating format 4A table
-        mDatabase = openOrCreateDatabase(CSVParsing.DATABASE_NAME, MODE_PRIVATE, null);
-        mDatabase.execSQL(
-                "CREATE TABLE IF NOT EXISTS format4A (\n" +
-                        "    id INTEGER NOT NULL CONSTRAINT employees_pk PRIMARY KEY AUTOINCREMENT,\n" +
-                        "    sno varchar(200) NOT NULL,\n" +
-                        "    wageSeekerId varchar(200) NOT NULL,\n" +
-                        "    fullname varchar(200) NOT NULL,\n" +
-                        "    postBank varchar(200) NOT NULL,\n" +
-                        "    work_details varchar(200) NOT NULL,\n" +
-                        "    work_duration varchar(200) NOT NULL,\n" +
-                        "    payOrderRelDate varchar(200) NOT NULL,\n" +
-                        "    musterId varchar(200) NOT NULL,\n" +
-                        "    workedDays varchar(200) NOT NULL,\n" +
-                        "    amtToBePaid varchar(200) NOT NULL,\n" +
-                        "    actualWorkedDays varchar(200) NOT NULL,\n" +
-                        "    actualAmtPaid varchar(200) NOT NULL,\n" +
-                        "    differenceInAmt varchar(200) NOT NULL,\n" +
-                        "    isJobCardAvail varchar(200) NOT NULL,\n" +
-                        "    isPassbookAvail varchar(200) NOT NULL,\n" +
-                        "    isPayslipIssued varchar(200) NOT NULL,\n" +
-                        "    respPersonName varchar(200) NOT NULL,\n" +
-                        "    respPersonDesig varchar(200) NOT NULL,\n" +
-                        "    categoryone varchar(200) NOT NULL,\n" +
-                        "    categorytwo varchar(200) NOT NULL,\n" +
-                        "    categorythree varchar(200) NOT NULL\n" +
-                        ");"
-        );
 
-        //Checking if items are there in Format4A table
-        checkDataForm4aTable();
-    }
 }
