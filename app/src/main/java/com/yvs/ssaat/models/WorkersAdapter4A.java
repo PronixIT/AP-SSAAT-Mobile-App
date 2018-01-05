@@ -1,9 +1,5 @@
 package com.yvs.ssaat.models;
 
-/**
- * Created by NAVEEN KS on 12/20/2017.
- */
-
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.support.v7.widget.RecyclerView;
@@ -23,7 +19,6 @@ import android.widget.Toast;
 import com.yvs.ssaat.Dal.DalDoorToDoorResults;
 import com.yvs.ssaat.R;
 import com.yvs.ssaat.activities.CSVParsing;
-import com.yvs.ssaat.common.Constants;
 import com.yvs.ssaat.pojo.Worker;
 import com.yvs.ssaat.session.SessionManager;
 
@@ -31,7 +26,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -40,18 +34,20 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
 
 
     private List<Worker> workersList;
+
     private Context mCon;
     String subCategState="";
     SQLiteDatabase mDatabase;
-    private ArrayList<Worker> checkList = new ArrayList<Worker>();
     SessionManager sessionManager;
     DalDoorToDoorResults dalDoorToDoorResults;
+
 
     public WorkersAdapter4A(Context mCon, List<Worker> workersList) {
         this.workersList = workersList;
         this.mCon = mCon;
         this.sessionManager = new SessionManager(mCon);
         dalDoorToDoorResults = new DalDoorToDoorResults();
+
     }
 
     @Override
@@ -151,62 +147,6 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
             }
         });
 
-        holder.updateWorkerDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try{
-                    String created_time = "";
-                    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:SS");
-                    Calendar cal = Calendar.getInstance();
-                    System.out.println("created timestamp"+dateFormat.format(cal.getTime()));
-                    created_time = dateFormat.format(cal.getTime());
-                    mDatabase = mCon.openOrCreateDatabase(CSVParsing.DATABASE_NAME, MODE_PRIVATE, null);
-                    System.out.println("Selected Values: "+holder.mainCategorySpinner.getSelectedItem().toString()+"---"+holder.subCategorySpinner1.getSelectedItem().toString()+
-                            "-------"+holder.subCategorySpinner2.getSelectedItem().toString());
-//                    String insertSQL = "INSERT INTO format4A \n" +
-//                            "(sno, wageSeekerId ,fullname, postBank, work_details,work_duration,payOrderRelDate, musterId, workedDays, amtToBePaid," +
-//                            " actualWorkedDays," +
-//                            "actualAmtPaid,differenceInAmt,isJobCardAvail,isPassbookAvail,isPayslipIssued,respPersonName,respPersonDesig," +
-//                            "categoryone,categorytwo,categorythree,created_date,comments, created_by, modified_date,modified_by,isActive)\n" +
-//                            "VALUES \n" +
-//                            "(?, ?, ?,?,?, ?, ?,?,?, ?, ?,?, ?, ?,?,?, ?,?,?,?,?, ?,?,?,?,?,?);";
-//                    mDatabase.execSQL(insertSQL,
-//                            new String[]{
-                    long result = dalDoorToDoorResults.insertOrUpdateDoorToDoorResultData(mDatabase,
-                                    holder.serialNo.getText().toString(),
-                                    holder.wageSeekerId.getText().toString(),
-                                    holder.fullname.getText().toString(),
-                                    holder.postOfficeBankAccDetails.getText().toString(),
-                                    holder.allWorkDetails.getText().toString(),
-                                    holder.workDuration.getText().toString(),
-                                    holder.payOrderReleaseDate.getText().toString(),
-                                    holder.musterId.getText().toString(),
-                                    holder.noOfWorkingDays.getText().toString(),
-                                    holder.amtToBePaid.getText().toString(),
-                                    holder.actualWorkedDays.getText().toString(),
-                                    holder.actualAmtPaid.getText().toString(),
-                                    holder.diffInAmtPaid.getText().toString(),
-                                    holder.isJobCardAvailSpinner.getSelectedItem().toString(),
-                                    holder.isPassbookAvailSpinner.getSelectedItem().toString(),
-                                    holder.isPaylipIssuedSpinner.getSelectedItem().toString(),
-                                    holder.respPersonName.getText().toString(),
-                                    holder.respPersonDesig.getText().toString(),
-                                    holder.mainCategorySpinner.getSelectedItem().toString(),
-                                    holder.subCategorySpinner1.getSelectedItem().toString(),
-                                    holder.subCategorySpinner2.getSelectedItem().toString(),
-                                    created_time,
-                                    holder.comments.getText().toString(),
-                            Constants.userMasterDO.userName,new SimpleDateFormat("yyyy-MM-dd HH:mm:SS").format(new Date()), Constants.userMasterDO.userName,""
-                            );
-                    if(result != 0 && result != -1)
-                        Toast.makeText(mCon,"Details saved successfully",Toast.LENGTH_SHORT).show();
-                    else
-                        Toast.makeText(mCon,"Failed to save details",Toast.LENGTH_SHORT).show();
-                }catch (SQLiteException error){
-                    Toast.makeText(mCon,"Failed to save details",Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
     }
 
@@ -247,6 +187,7 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
             subCategorySpinner2 = view.findViewById(R.id.subCategorySpinner2);
             updateWorkerDetails = view.findViewById(R.id.updateWorkerDetails);
             comments = view.findViewById(R.id.comments);
+
         }
 
         public void setFilter(List<Worker> lrModels) {
