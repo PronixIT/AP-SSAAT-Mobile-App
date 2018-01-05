@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <Button android:id="@+id/write"
+            android:text="Write Text File"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:visibility="gone"
+            android:layout_width="200dp">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <Button android:id="@+id/writeExcel"
+            android:text="Write Excel File"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content">
+        </Button>
+        <Button android:id="@+id/readExcel"
+            android:text="Read Excel File"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content">
+
+        </Button>
+        <Button
+            android:id="@+id/read"
+            android:text="View Data"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/excel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excel Raw Data: "
+        android:padding="10dp"/>
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TableLayout>
+
+</LinearLayout>

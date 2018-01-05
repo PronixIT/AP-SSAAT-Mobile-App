@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff0173ba"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/serialNo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="12345"
+                android:textColor="#ff00adef"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/wageSeekerId"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/postOfficeBankAccDetails"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="BANK-CBS-31 87253807"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/allWorkDetails"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/workDuration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/payOrderReleaseDate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/musterId"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/noOfWorkingDays"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/amtToBePaid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/actualWorkedDays"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/actualAmtPaid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/diffInAmtPaid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/isJobCardAvailSpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/isPassbookAvailSpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/isPaylipIssuedSpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/respPersonName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/respPersonDesig"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/mainCategorySpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/subCategorySpinner1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/subCategorySpinner2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:hint=""
+                android:typeface="sans"
+                android:visibility="visible" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+</LinearLayout>

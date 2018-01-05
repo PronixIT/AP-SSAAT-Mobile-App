@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/doortodoor">
+
+            <RelativeLayout
+                android:id="@+id/rl_D2DAudit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#75000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/dashboardtextstyle"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="Door to Door Audit"
+                    android:textColor="#e6f9d2"
+                    android:textSize="@dimen/dashboardFontSize"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/worksite">
+
+            <RelativeLayout
+                android:id="@+id/rl_WorksiteAudit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#75000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/dashboardtextstyle"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="Worksite Audit"
+                    android:textColor="#e6f9d2"
+                    android:textSize="@dimen/dashboardFontSize"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/recordverification">
+
+            <RelativeLayout
+                android:id="@+id/rl_RecordVerification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#75000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/dashboardtextstyle"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="Record Verification"
+                    android:textColor="#e6f9d2"
+                    android:textSize="@dimen/dashboardFontSize"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_sync">
+
+            <RelativeLayout
+                android:id="@+id/rl_Sync"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#85000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/dashboardtextstyle"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="Sync"
+                    android:textColor="#e6f9d2"
+                    android:textSize="@dimen/dashboardFontSize"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

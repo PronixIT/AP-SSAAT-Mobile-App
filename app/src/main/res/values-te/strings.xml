@@ -1,0 +1,42 @@
+<resources>
+    <string name="Login">యాక్సెస్</string>
+    <string name="MGNREGA">ఎన్ఆర్ఇజిఎ</string>
+
+    <!--format4a-->
+    <string name="sNo">క్రమ సంఖ్యా</string>
+    <string name="jobSeekerId">ఉపాధి కార్డు సంఖ్యా</string>
+    <string name="fullName">పూర్తి పేరు</string>
+    <string name="POorBAD">పోస్టాఫీసు / బ్యాంకు ఖాతా</string>
+    <string name="WorkDetails">"పని వివరాల గుర్తింపు సంఖ్యా / పనిపేరు /పనిస్థలం</string>
+    <string name="workDuration">వారం (నుండివరకు) </string>
+    <string name="payOrderReleaseDate">పే-ఆర్డరు నెంబర్ మంజూరు చేయబడిన తేదీ</string>
+    <string name="musterId">మాస్టర్ సంఖ్య</string>
+    <string name="noOfWorkingDays">పని చేసిన సంఖ్యా</string>
+    <string name="AmtToBePaid">చెల్లించిన వేతనం (రూ)</string>
+    <string name="actualNoOfdaysWorked">వాస్తవంగా పని చేసిన రోజులు</string>
+    <string name="actualPaidAmt">వాస్తవంగా చెల్లించిన వేతనం రూ !!</string>
+    <string name="diffInAmtPaid">తేడా వచ్చిన రూ</string>
+    <string name="isJobCardIdAvai">కూలీలా యుక్క జాబు కార్డు /వారి వద్ద ఉంటున్నయా?(అవును/కాదు)</string>
+    <string name="isPassbookisAvailable">కూలీలా యుక్క కాతా పుస్తకం/ వారి వద్ద ఉంటున్నయా?(అవును/కాదు)</string>
+    <string name="paySlipsIssuing">వేతనం చేస్తున్నారా లేదా ?</string>
+    <string name="resPersonName">బాధ్యుతులైన వారి పేరు</string>
+    <string name="resPersonJobDesg">హోదా</string>
+    <string name="category1">వర్గం-I</string>
+    <string name="category2">వర్గం-II</string>
+    <string name="category3">వర్గం-III</string>
+    <string name="comments">వ్యాఖ్యలు</string>
+
+    <!--formate5A-->
+    <string name="workId">పని గుర్తింపు సంఖ్యా</string>
+    <string name="workNameorLocation">పని పేరు / పని స్థలము</string>
+    <string name="taskDetails">టాస్క్ /పని వివరాలు</string>
+    <string name="technologyType">నైపుణ్య రకం</string>
+    <string name="approvedEstvalues">అనుమతి (ఎస్టిమేట్) ప్రకారం</string>
+    <string name="measurments">పరిమాణం</string>
+    <string name="total">మొత్తం</string>
+    <string name="asPerMBReporrt">రిపోర్టు (MB ) ప్రకారం</string>
+    <string name="isWorkDone">పని స్థలం వద్దు పని జరిగిందా?</string>
+    <string name="checkingValues">క్షేత్ర స్థాయి పరిశీలన ప్రకారం</string>
+    <string name="difference">తేడా</string>
+    <string name="impOfWork">పని యొక్క ప్రాముఖ్యత</string>
+</resources>

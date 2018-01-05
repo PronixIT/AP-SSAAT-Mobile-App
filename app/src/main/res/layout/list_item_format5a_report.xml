@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff0173ba"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/serialNo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="1"
+                android:textColor="#ff00adef"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/work_code"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/work_details"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/task_details"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="Task"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/techType"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/ap_measure"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/ap_total"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/amb_measure"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/amb_total"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/isworkDoneSpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+            <TextView
+                android:id="@+id/cv_measure"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+            <TextView
+                android:id="@+id/cv_total"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+            <TextView
+                android:id="@+id/diff_measure"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+            <TextView
+                android:id="@+id/diff_total"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/respPersonName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/respPersonDesig"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+            <TextView
+                android:id="@+id/imp_of_work"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:hint="comments"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+</LinearLayout>

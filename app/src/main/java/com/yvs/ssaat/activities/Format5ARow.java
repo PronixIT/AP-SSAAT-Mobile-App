@@ -255,7 +255,7 @@ public class Format5ARow extends AppCompatActivity implements View.OnClickListen
                     imp_of_work.getText().toString(),
                     comments.getText().toString(),
                     created_time,
-                    Constants.userMasterDO.userName,new SimpleDateFormat("yyyy-MM-dd HH:mm:SS").format(new Date()),
+                    Constants.userMasterDO.userName,(new SimpleDateFormat("yyyy-MM-dd HH:mm:SS")).format(new Date()),
                     Constants.userMasterDO.userName,"", checkList.get(i).getTask_code());
             if(result == 0 || result == -1)
             {
