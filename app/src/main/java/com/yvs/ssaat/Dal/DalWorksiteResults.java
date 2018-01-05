@@ -42,7 +42,7 @@ public class DalWorksiteResults {
             newTaskValue.put("comments", comments);
 
             newTaskValue.put("modified_date", modifiedDate);
-            newTaskValue.put("modified_by", modifiedBy);
+            newTaskValue.put("modified_by", modifiedBy.trim());
             newTaskValue.put("isActive", isActive);
             newTaskValue.put("task_code", taskCode);
 
@@ -52,7 +52,7 @@ public class DalWorksiteResults {
                     "work_code=? AND task_code=? " , strWhereClauseValues);
             if (res == 0)
             {
-                newTaskValue.put("created_date", createdDate);
+                newTaskValue.put("created_date", createdDate.trim());
                 newTaskValue.put("created_by", createdBy);
                 res = DBManager.getInstance().insertRecord("format5A",  newTaskValue);
             }

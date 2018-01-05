@@ -15,7 +15,7 @@ import java.util.Date;
 
 public class DalDoorToDoorResults {
 
-    public long insertOrUpdateDoorToDoorResultData(SQLiteDatabase database, String sNo, String wageSeekerId, String fullName,
+    public long insertOrUpdateDoorToDoorResultData(SQLiteDatabase database, String sNo, String wageSeekerId, String workerCode,String fullName,
                                                    String postBank, String workDetails, String workDuration, String payOrderRelDate,
                                                    String musterId, String workedDays, String amtToBePaid, String actualWorkedDays,
                                                    String actualAmtPaid, String differenceInAmt, String isJobCardAvail, String isPassbookAvail,
@@ -27,7 +27,8 @@ public class DalDoorToDoorResults {
         try {
             ContentValues newTaskValue = new ContentValues();
             newTaskValue.put("sno", sNo);
-            newTaskValue.put("wageSeekerId", wageSeekerId);
+            newTaskValue.put("wageSeekerId", wageSeekerId.trim());
+            newTaskValue.put("worker_code", workerCode.trim());
             newTaskValue.put("fullname", fullName);
             newTaskValue.put("postBank", postBank);
             newTaskValue.put("work_details", workDetails);
@@ -47,13 +48,14 @@ public class DalDoorToDoorResults {
             newTaskValue.put("categoryone", categoryOne);
             newTaskValue.put("categorytwo", categoryTwo);
             newTaskValue.put("categorythree", categoryThree);
+            newTaskValue.put("created_date", createDate);
             newTaskValue.put("comments", comments);
             newTaskValue.put("modified_date", modifiedDate);
             newTaskValue.put("modified_by", modifiedBy);
             newTaskValue.put("isActive", isActive);
 
 
-            strWhereClauseValues = wageSeekerId + "," + musterId;
+            strWhereClauseValues = wageSeekerId.trim() + "," + musterId;
 
             res = DBManager.getInstance().updateRecord( "format4A", newTaskValue,
                     "wageSeekerId=? " +

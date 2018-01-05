@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinator"
@@ -46,764 +46,603 @@
 
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#ff00adef">
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:id="@+id/tv_SNo"
                                 android:layout_width="50dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_height="match_parent"
                                 android:text="S.No"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="bold"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/tv_WorkId"
                                 android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Work ID"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/tv_WorkNameOrLoc"
                                 android:layout_width="150dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Work Name/Work Location"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/tv_TaskDetails"
                                 android:layout_width="250dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Task Details"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/tv_TechnologyType"
                                 android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Technology Type"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
-
                             <LinearLayout
-                                android:layout_width="200dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="219dp"
+                                android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:gravity="center"
+                                android:layout_margin="1dp"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:id="@+id/tv_apprEstValues"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:paddingLeft="3dp"
-                                    android:paddingRight="3dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:padding="3dp"
+                                    android:background="#ff00adef"
                                     android:text="Approved Estimated Values"
                                     android:textColor="@color/white"
                                     android:textSize="14sp"
                                     android:textStyle="normal"
                                     android:typeface="sans" />
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="1dp"
-                                    android:background="#fff" />
-
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="1dp"
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <TextView
                                         android:id="@+id/tv_apprEstValues_Measurements"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="119dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:layout_marginEnd="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:background="#ff00adef"
                                         android:text="Measurements"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
-                                    <View
-                                        android:layout_width="1dp"
-                                        android:layout_height="match_parent"
-                                        android:background="#fff" />
-
                                     <TextView
                                         android:id="@+id/tv_apprEstValues_Total"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="99dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginStart="1dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:background="#ff00adef"
                                         android:text="Total"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-
                             </LinearLayout>
 
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
-
                             <LinearLayout
-                                android:layout_width="200dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="219dp"
+                                android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:gravity="center"
+                                android:layout_margin="1dp"
                                 android:orientation="vertical">
 
                                 <TextView
                                     android:id="@+id/tv_AsPerMBReport"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:paddingLeft="3dp"
-                                    android:paddingRight="3dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="1dp"
+                                    android:padding="3dp"
+                                    android:background="#ff00adef"
                                     android:text="As Per MB Report"
                                     android:textColor="@color/white"
                                     android:textSize="14sp"
                                     android:textStyle="normal"
                                     android:typeface="sans" />
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="1dp"
-                                    android:background="#fff" />
-
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="1dp"
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <TextView
                                         android:id="@+id/tv_AsPerMBReport_Measurement"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="119dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:layout_marginEnd="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:background="#ff00adef"
                                         android:text="Measurements"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
-                                    <View
-                                        android:layout_width="1dp"
-                                        android:layout_height="match_parent"
-                                        android:background="#fff" />
-
                                     <TextView
                                         android:id="@+id/tv_AsPerMBReport_Total"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="99dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginStart="1dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:background="#ff00adef"
                                         android:text="Total"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-
                             </LinearLayout>
-
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
 
                             <TextView
                                 android:id="@+id/tv_IsWorkDone"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Is work Done at work placae(yes/no)"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <LinearLayout
-                                android:layout_width="200dp"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp">
+                                android:layout_width="219dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_margin="1dp"
+                                android:orientation="vertical">
 
                                 <TextView
                                     android:id="@+id/tv_CheckingValues"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:paddingLeft="3dp"
-                                    android:paddingRight="3dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:padding="3dp"
+                                    android:background="#ff00adef"
                                     android:text="Checking Values"
                                     android:textColor="@color/white"
                                     android:textSize="14sp" />
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="1dp"
-                                    android:background="#fff" />
-
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <TextView
                                         android:id="@+id/tv_CheckingValues_Measurements"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="119dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:layout_marginEnd="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:background="#ff00adef"
                                         android:text="Measurements"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
-                                    <View
-                                        android:layout_width="1dp"
-                                        android:layout_height="match_parent"
-                                        android:background="#fff" />
-
                                     <TextView
                                         android:id="@+id/tv_CheckingValues_Total"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="99dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginStart="1dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:background="#ff00adef"
                                         android:text="Total"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-
                             </LinearLayout>
 
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <LinearLayout
-                                android:layout_width="200dp"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp">
+                                android:layout_width="219dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_margin="1dp"
+                                android:orientation="vertical">
 
                                 <TextView
                                     android:id="@+id/tv_Difference"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:paddingLeft="3dp"
-                                    android:paddingRight="3dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:padding="3dp"
+                                    android:background="#ff00adef"
                                     android:text="Difference"
                                     android:textColor="@color/white"
                                     android:textSize="14sp" />
 
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="1dp"
-                                    android:background="#fff" />
-
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="1dp"
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:orientation="horizontal">
 
                                     <TextView
                                         android:id="@+id/tv_Difference_Measurements"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="119dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:layout_marginEnd="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:background="#ff00adef"
                                         android:text="Measurements"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
-                                    <View
-                                        android:layout_width="1dp"
-                                        android:layout_height="match_parent"
-                                        android:background="#fff" />
-
                                     <TextView
                                         android:id="@+id/tv_Difference_Total"
-                                        android:layout_width="100dp"
-                                        android:layout_height="wrap_content"
-                                        android:paddingLeft="3dp"
-                                        android:paddingRight="3dp"
+                                        android:layout_width="99dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginStart="1dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp"
+                                        android:background="#ff00adef"
                                         android:text="Total"
                                         android:textColor="@color/white"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-
                             </LinearLayout>
-
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
 
                             <TextView
                                 android:id="@+id/tv_RespPersonName"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Responsible Person Name"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
-
                             <TextView
                                 android:id="@+id/tv_RespPersonDesg"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Responsible Person Job Designation"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
-
                             <TextView
                                 android:id="@+id/tv_ImportanceOfWork"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Importance of work"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/tv_Comments"
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="Comments"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
-
                         </TableRow>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#fff" />
 
                         <TableRow
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="#ff00adef">
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:id="@+id/workIdTxt12"
                                 android:layout_width="50dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.1"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/workNameTxt12"
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.2"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/skillTypeTxt12"
                                 android:layout_width="150dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.3"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/taskCodeTxt12"
                                 android:layout_width="250dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.4"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/taskNameTxt122"
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.5"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/taskRateTxt132"
-                                android:layout_width="100dp"
+                                android:layout_width="119dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.6"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
                                 android:id="@+id/quantityTxt121"
-                                android:layout_width="100dp"
+                                android:layout_width="98dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.7"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="119dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.8"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="98dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.9"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.10"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="119dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.11"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="98dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.12"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="119dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.13"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="98dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.14"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="120dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.15"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.16"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.17"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
 
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
-
                             <TextView
-                                android:layout_width="100dp"
+                                android:layout_width="150dp"
                                 android:layout_height="wrap_content"
-                                android:paddingLeft="3dp"
-                                android:paddingRight="3dp"
+                                android:layout_margin="1dp"
+                                android:padding="3dp"
+                                android:background="#ff00adef"
                                 android:text="3.1.18"
                                 android:textColor="#fff"
                                 android:textSize="14sp"
                                 android:textStyle="normal"
                                 android:typeface="sans" />
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#fff" />
-
-
                         </TableRow>
-
                     </LinearLayout>
 
                     <android.support.v7.widget.RecyclerView
@@ -811,17 +650,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:paddingBottom="5dp"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="5dp"
-                        android:paddingTop="5dp"
                         android:scrollbars="vertical" />
 
-
                 </TableLayout>
-
-
-
             </HorizontalScrollView>
             <Button
                 android:id="@+id/but_Formate5ASave"
@@ -838,4 +669,4 @@
         </LinearLayout>
 
     </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

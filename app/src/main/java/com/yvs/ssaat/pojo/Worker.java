@@ -9,11 +9,18 @@ public class Worker {
             household_code, worker_code, surname, name, account_no, work_code, work_name, work_location,
             work_progress_code, from_date, to_date, days_worked, amount_paid, payment_date, audit_payslip_date,
             muster_id;
+    String actualworkeddays, actualamtpaid, differenceinamount, isjobcardavail, ispassbookavail,ispayslipissued,
+            resppersonname, resppesonjobdesg, category1, category2, category3,comments;
 
-    public Worker(String sno,String district_code, String mandal_code, String panchayat_code,String village_code,String habitation_code,String ssaat_code,
-                  String household_code,String worker_code,String surname,String name,String account_no,String work_code,String work_name,
-                  String work_location, String work_progress_code,String from_date,String to_date,String days_worked,
-                  String amount_paid, String payment_date,String audit_payslip_date, String muster_id){
+
+
+    public Worker(String sno, String district_code, String mandal_code, String panchayat_code, String village_code, String habitation_code, String ssaat_code,
+                  String household_code, String worker_code, String surname, String name, String account_no, String work_code, String work_name,
+                  String work_location, String work_progress_code, String from_date, String to_date, String days_worked,
+                  String amount_paid, String payment_date, String audit_payslip_date, String muster_id,
+                  String actualworkeddays, String actualamtpaid, String differenceinamount, String isjobcardavail,
+                  String ispassbookavail,String ispayslipissued,String resppersonname, String resppesonjobdesg, String category1,
+                  String category2, String category3,String comments){
         this.sno = sno;
         this.district_code = district_code;
         this.mandal_code = mandal_code;
@@ -37,6 +44,18 @@ public class Worker {
         this.payment_date = payment_date;
         this.audit_payslip_date = audit_payslip_date;
         this.muster_id = muster_id;
+        this.actualworkeddays = actualworkeddays;
+        this.actualamtpaid = actualamtpaid;
+        this.differenceinamount = differenceinamount;
+        this.isjobcardavail= isjobcardavail;
+        this.ispassbookavail= ispassbookavail;
+        this.ispayslipissued = ispayslipissued;
+        this.resppersonname = resppersonname;
+        this.resppesonjobdesg = resppesonjobdesg;
+        this.category1 = category1;
+        this.category2 = category2;
+        this.category3 = category3;
+        this.comments = comments;
     }
 
     public String getSno() {
@@ -221,5 +240,100 @@ public class Worker {
 
     public void setMuster_id(String muster_id) {
         this.muster_id = muster_id;
+    }
+    public String getActualworkeddays() {
+        return actualworkeddays;
+    }
+
+    public void setActualworkeddays(String actualworkeddays) {
+        this.actualworkeddays = actualworkeddays;
+    }
+
+    public String getActualamtpaid() {
+        return actualamtpaid;
+    }
+
+    public void setActualamtpaid(String actualamtpaid) {
+        this.actualamtpaid = actualamtpaid;
+    }
+
+    public String getDifferenceinamount() {
+        return differenceinamount;
+    }
+
+    public void setDifferenceinamount(String differenceinamount) {
+        this.differenceinamount = differenceinamount;
+    }
+
+    public String getIsjobcardavail() {
+        return isjobcardavail;
+    }
+
+    public void setIsjobcardavail(String isjobcardavail) {
+        this.isjobcardavail = isjobcardavail;
+    }
+
+    public String getIspassbookavail() {
+        return ispassbookavail;
+    }
+
+    public void setIspassbookavail(String ispassbookavail) {
+        this.ispassbookavail = ispassbookavail;
+    }
+
+    public String getIspayslipissued() {
+        return ispayslipissued;
+    }
+
+    public void setIspayslipissued(String ispayslipissued) {
+        this.ispayslipissued = ispayslipissued;
+    }
+
+    public String getResppersonname() {
+        return resppersonname;
+    }
+
+    public void setResppersonname(String resppersonname) {
+        this.resppersonname = resppersonname;
+    }
+
+    public String getResppesonjobdesg() {
+        return resppesonjobdesg;
+    }
+
+    public void setResppesonjobdesg(String resppesonjobdesg) {
+        this.resppesonjobdesg = resppesonjobdesg;
+    }
+
+    public String getCategory1() {
+        return category1;
+    }
+
+    public void setCategory1(String category1) {
+        this.category1 = category1;
+    }
+
+    public String getCategory2() {
+        return category2;
+    }
+
+    public void setCategory2(String category2) {
+        this.category2 = category2;
+    }
+
+    public String getCategory3() {
+        return category3;
+    }
+
+    public void setCategory3(String category3) {
+        this.category3 = category3;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
     }
 }

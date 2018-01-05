@@ -1,10 +1,14 @@
 package com.yvs.ssaat.Dal;
 
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 
 import com.yvs.ssaat.db.DBManager;
+import com.yvs.ssaat.pojo.Worker;
+
+import java.util.ArrayList;
 
 /**
  * Created by ravi on 1/2/2018.
@@ -101,5 +105,67 @@ public class DalDoorToDoorDetails {
         }
 
         return iResult;
+    }
+
+    public ArrayList<Worker> getDoorToDoorDetails(String householdCode)
+    {
+        ArrayList<Worker> arrayList = new ArrayList<>();
+        Cursor cursorEmployees = null;
+            String query = "SELECT EM.id, EM.district_code, EM.mandal_code, EM.panchayat_code, EM.village_code, EM.habitation_code, \n" +
+                "EM.ssaat_code, EM.household_code, EM.worker_code, EM.surname,EM.telugu_surname, EM.name, EM.telugu_name, EM.account_no,\n" +
+                "EM.work_code, EM.work_name, EM.work_name_telugu, EM.work_location, EM.work_location_telugu, EM.work_progress_code, \n" +
+                "EM.from_date, EM.to_date, EM.days_worked, EM.amount_paid, EM.payment_date, EM.audit_payslip_date, \n" +
+                "EM.audit_is_passbook_avail, EM.audit_is_payslip_issuing, EM.audit_is_jobcard_avail, EM.audit_days_worked, \n" +
+                "EM.audit_amount_rec, EM.audit_remarks, EM.status, EM.sent_file_name, EM.sent_date, EM.resp_filename, EM.resp_date, EM.created_date, EM.department, EM.muster_id,\n" +
+                "IFNULL(f4a.actualWorkedDays,''), IFNULL(f4a.actualAmtPaid,''), IFNULL(f4a.differenceInAmt,''), IFNULL(f4a.isJobCardAvail,''), IFNULL(f4a.isPassbookAvail,''), IFNULL(f4a.isPayslipIssued,''),\n" +
+                "IFNULL(f4a.respPersonName,''), IFNULL(f4a.respPersonDesig,''), IFNULL(f4a.categoryone,''), IFNULL(f4a.categorytwo,''), " +
+                "IFNULL(f4a.categorythree,''), IFNULL(f4a.comments,'')\n" +
+                " FROM employees AS EM LEFT OUTER JOIN format4A AS f4a ON EM.household_code = IFNULL(f4a.wageSeekerId,'') \n" +
+                " AND EM.muster_id = IFNULL(f4a.musterId,'')  WHERE EM.household_code IN ('"+ householdCode +"')";
+        cursorEmployees = DBManager.getInstance().getRawQuery(query);
+        arrayList.clear();
+        int count = 1;
+        if(cursorEmployees.moveToFirst())
+        {
+            do {
+                arrayList.add(new Worker(
+                        String.valueOf(count++),
+                        cursorEmployees.getString(1),
+                        cursorEmployees.getString(2),
+                        cursorEmployees.getString(3),
+                        cursorEmployees.getString(4),
+                        cursorEmployees.getString(5),
+                        cursorEmployees.getString(6),
+                        cursorEmployees.getString(7),
+                        cursorEmployees.getString(8),
+                        cursorEmployees.getString(9),
+                        cursorEmployees.getString(11),
+                        cursorEmployees.getString(13),
+                        cursorEmployees.getString(14),
+                        cursorEmployees.getString(15),
+                        cursorEmployees.getString(17),
+                        cursorEmployees.getString(19),
+                        cursorEmployees.getString(20),
+                        cursorEmployees.getString(21),
+                        cursorEmployees.getString(22),
+                        cursorEmployees.getString(23),
+                        cursorEmployees.getString(24),
+                        cursorEmployees.getString(25),
+                        cursorEmployees.getString(39),
+                        cursorEmployees.getString(40),
+                        cursorEmployees.getString(41),
+                        cursorEmployees.getString(42),
+                        cursorEmployees.getString(43),
+                        cursorEmployees.getString(44),
+                        cursorEmployees.getString(45),
+                        cursorEmployees.getString(46),
+                        cursorEmployees.getString(47),
+                        cursorEmployees.getString(48),
+                        cursorEmployees.getString(49),
+                        cursorEmployees.getString(50),
+                        cursorEmployees.getString(51)));
+            }while (cursorEmployees.moveToNext());
+        }
+        return arrayList;
     }
 }

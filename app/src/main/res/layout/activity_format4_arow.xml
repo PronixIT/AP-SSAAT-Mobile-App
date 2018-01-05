@@ -42,6 +42,7 @@
                         android:layout_height="wrap_content">
 
                         <TextView
+                            android:id="@+id/tv_SNo"
                             android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:text="S.No"
@@ -54,6 +55,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_JobSeekerId"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -66,6 +68,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_FullName"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -78,6 +81,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_POOrBA"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -90,6 +94,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_WorkDetails"
                             android:layout_width="180dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -102,6 +107,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_WorkDuration"
                             android:layout_width="100dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -114,6 +120,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_PayOrderRelease"
                             android:layout_width="100dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -126,6 +133,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_MusterId"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -138,6 +146,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_NoOfWorkingDays"
                             android:layout_width="100dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -150,6 +159,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_AmountToBePaid"
                             android:layout_width="100dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -162,6 +172,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_ActualNofOfDaysWorked"
                             android:layout_width="100dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -174,6 +185,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_ActualPaidAmt"
                             android:layout_width="100dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -186,6 +198,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_DiffInAmtPaid"
                             android:layout_width="100dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -198,6 +211,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_IsJobCardAvail"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -210,6 +224,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_IsPassBookAvail"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -222,6 +237,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_PayslipsIssuing"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -234,6 +250,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_RespPersonName"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -246,6 +263,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_RespPersonDesg"
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -258,6 +276,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_Category1"
                             android:layout_width="180dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -270,6 +289,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_Category2"
                             android:layout_width="180dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -282,6 +302,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_Category3"
                             android:layout_width="180dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -294,6 +315,7 @@
                             android:typeface="sans" />
 
                         <TextView
+                            android:id="@+id/tv_Comments"
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
                             android:layout_margin="1dp"
@@ -594,10 +616,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:text="Button" />
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_fill_button"
+
+        android:text="Save" />
 </RelativeLayout>

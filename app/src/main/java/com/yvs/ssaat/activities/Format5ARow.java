@@ -1,8 +1,10 @@
 package com.yvs.ssaat.activities;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -31,6 +33,10 @@ import java.util.Date;
 
 public class Format5ARow extends AppCompatActivity implements View.OnClickListener {
 
+    TextView serialNo, work_code_tv, allWorkDetails,taskDetails,techType,ap_measure,ap_total,amb_measure,amb_total;
+    EditText cv_measure,cv_total,diff_measure,diff_total,
+            respPersonName,respPersonDesig,imp_of_work,comments;
+    Spinner isworkDoneSpinner;
     SQLiteDatabase mDatabase;
     private ArrayList<WorkSitePOJO> checkList = new ArrayList<WorkSitePOJO>();
     Bundle bundle;
@@ -203,17 +209,86 @@ public class Format5ARow extends AppCompatActivity implements View.OnClickListen
 
     }
 
+    private boolean checkValidations(){
+        boolean flag = false;
+        for (int i = 0; i < checkList.size(); i++) {
+            View view = rcyVw_workers.getChildAt(i);
+            flag = false;
+            ap_measure = view.findViewById(R.id.ap_measure);
+            ap_total = view.findViewById(R.id.ap_total);
+            amb_measure = view.findViewById(R.id.amb_measure);
+            amb_total = view.findViewById(R.id.amb_total);
+            isworkDoneSpinner = view.findViewById(R.id.isworkDoneSpinner);
+            cv_measure = view.findViewById(R.id.cv_measure);
+            cv_total = view.findViewById(R.id.cv_total);
+            diff_measure = view.findViewById(R.id.diff_measure);
+            diff_total = view.findViewById(R.id.diff_total);
+            respPersonName = view.findViewById(R.id.respPersonName);
+            respPersonDesig = view.findViewById(R.id.respPersonDesig);
+            imp_of_work = view.findViewById(R.id.imp_of_work);
+            comments = view.findViewById(R.id.comments);
+            if (cv_measure.getText().toString().trim().equals("")) {
+                //Toast.makeText(mCon, "Actual Work Days should not be empty", Toast.LENGTH_SHORT).show();
+//                actualWorkedDays.setError("Actual Work Days should not be empty");
+                showalert(this, "Alert", "Checked Value Measurement should not be empty");
+                break;
+            } else {
+                if (cv_total.getText().toString().trim().equals("")) {
+                    //Toast.makeText(mCon, "Actual Amount Paid should not be empty", Toast.LENGTH_SHORT).show();
+//                    actualAmtPaid.setError("Actual Work Days should not be empty");
+                    showalert(this, "Alert", "Checked Value Total should not be empty");
+                    break;
+                } else {
+                    if (diff_measure.getText().toString().trim().equals("")) {
+                        //Toast.makeText(mCon, "Diiference in amount paid should not be empty if not keep 0", Toast.LENGTH_SHORT).show();
+//                        diffInAmtPaid.setError("Actual Work Days should not be empty");
+                        showalert(this, "Alert", "Difference in Measurement should not be empty");
+                        break;
+                    } else {
+                        if (diff_total.getText().toString().trim().equals("")) {
+                            //Toast.makeText(mCon, "Actual Amount Paid should not be empty", Toast.LENGTH_SHORT).show();
+//                    actualAmtPaid.setError("Actual Work Days should not be empty");
+                            showalert(this, "Alert", "Diffrence in total should not be empty");
+                            break;
+                        } else {
+                            if (imp_of_work.getText().toString().trim().equals("")) {
+                                //Toast.makeText(mCon, "Diiference in amount paid should not be empty if not keep 0", Toast.LENGTH_SHORT).show();
+//                        diffInAmtPaid.setError("Actual Work Days should not be empty");
+                                showalert(this, "Alert", "Importance of work should not be empty");
+                                break;
+                            } else {
+                                flag = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return flag;
+    }
+
+    public void showalert(Context context, String title, String message)
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                return;
+            }
+        });
+        builder.show();
+    }
+
     public void saveListItems()
     {
-        TextView serialNo, work_code, allWorkDetails,taskDetails,techType,ap_measure,ap_total,amb_measure,amb_total;
-        EditText cv_measure,cv_total,diff_measure,diff_total,
-                respPersonName,respPersonDesig,imp_of_work,comments;
-        Spinner isworkDoneSpinner;
+
         long result = -1;
         for (int i=0; i<checkList.size(); i++) {
             View view = rcyVw_workers.getChildAt(i);
             serialNo = view.findViewById(R.id.serialNo);
-            work_code = view.findViewById(R.id.work_code);
+            work_code_tv = view.findViewById(R.id.work_code);
             allWorkDetails = view.findViewById(R.id.allWorkDetails);
             taskDetails = view.findViewById(R.id.taskDetails);
             techType = view.findViewById(R.id.techType);
@@ -237,7 +312,7 @@ public class Format5ARow extends AppCompatActivity implements View.OnClickListen
 
             result = dalWorksiteResults.insertOrUpdateWorksiteResultData(mDatabase,
                     serialNo.getText().toString(),
-                    work_code.getText().toString(),
+                    work_code_tv.getText().toString(),
                     allWorkDetails.getText().toString(),
                     taskDetails.getText().toString(),
                     techType.getText().toString(),
@@ -277,8 +352,9 @@ public class Format5ARow extends AppCompatActivity implements View.OnClickListen
         switch (view.getId())
         {
             case R.id.but_Formate5ASave:
-                saveListItems();
-                break;
+                if (checkValidations()){
+                    saveListItems();
+                }
         }
 
     }

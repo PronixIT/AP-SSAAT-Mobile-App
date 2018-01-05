@@ -71,6 +71,18 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
         holder.musterId.setText(worker.getMuster_id());
         holder.noOfWorkingDays.setText(worker.getDays_worked());
         holder.amtToBePaid.setText(worker.getAmount_paid());
+        holder.actualWorkedDays.setText(worker.getActualworkeddays());
+        holder.actualAmtPaid.setText(worker.getActualamtpaid());
+        holder.diffInAmtPaid.setText(worker.getDifferenceinamount());
+        holder.isJobCardAvailSpinner.setSelection(worker.getIsjobcardavail().toUpperCase().equals("NO") ? 1 : 0, false);
+        holder.isPassbookAvailSpinner.setSelection(worker.getIspassbookavail().toUpperCase().equals("NO") ? 1 : 0, false);
+        holder.isPaylipIssuedSpinner.setSelection(worker.getIspayslipissued().toUpperCase().equals("NO") ? 1 : 0, false);
+        holder.respPersonName.setText(worker.getResppersonname());
+        holder.respPersonDesig.setText(worker.getResppesonjobdesg());
+        holder.mainCategorySpinner.setSelection(getCatefgory1position(worker.getCategory1()), false);
+        holder.subCategorySpinner1.setSelection(getCatefgory2position(worker.getCategory2()), false);
+        holder.subCategorySpinner2.setSelection(getCatefgory3position(worker.getCategory3()), false);
+        holder.comments.setText(worker.getComments());
 
         String[] maincategories = mCon.getResources().getStringArray(R.array.maincategories);
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(mCon,android.R.layout.simple_list_item_1, maincategories);
@@ -81,13 +93,13 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 //loadsecondspinner
                 String[] subcategories1;
-                if(i==0){
+                if(i==1){
                     subCategState = "Category1";
                     subcategories1 = mCon.getResources().getStringArray(R.array.Category1);
-                } else  if(i==1){
+                } else  if(i==2){
                     subCategState = "Category2";
                     subcategories1 = mCon.getResources().getStringArray(R.array.Category2);
-                } else  if(i==2){
+                } else  if(i==3){
                     subCategState = "Category3";
                     subcategories1 = mCon.getResources().getStringArray(R.array.Category3);
                 } else{
@@ -111,29 +123,31 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
                 //loadsecondspinner
                 String[] subcategories2 = new String[0];
                 if(subCategState.equalsIgnoreCase("Category1")){
-                    if(i==0){
+                    if(i==1){
                         subcategories2 = mCon.getResources().getStringArray(R.array.IssueCategory11);
-                    } else  if(i==1){
+                    } else  if(i==2){
                         subcategories2 = mCon.getResources().getStringArray(R.array.IssueCategory12);
-                    } else if(i==2){
+                    } else if(i==3){
                         subcategories2 = mCon.getResources().getStringArray(R.array.IssueCategory13);
                     }
                 }else if(subCategState.equalsIgnoreCase("Category2")){
-                    if(i==0){
+                    if(i==1){
                         subcategories2 = mCon.getResources().getStringArray(R.array.procedural1);
-                    } else  if(i==1){
-                        subcategories2 = mCon.getResources().getStringArray(R.array.procedural2);
                     } else  if(i==2){
+                        subcategories2 = mCon.getResources().getStringArray(R.array.procedural2);
+                    } else  if(i==3){
                         subcategories2 = mCon.getResources().getStringArray(R.array.procedural3);
-                    } else if(i==3){
+                    } else if(i==4){
                         subcategories2 = mCon.getResources().getStringArray(R.array.procedural4);
                     }
                 }else if(subCategState.equalsIgnoreCase("Category3")){
-                     subcategories2 = mCon.getResources().getStringArray(R.array.information1);
+                    if(i==1) {
+                        subcategories2 = mCon.getResources().getStringArray(R.array.information1);
+                    }
                 }else if(subCategState.equalsIgnoreCase("Category4")){
-                    if(i==0){
+                    if(i==1){
                         subcategories2 = mCon.getResources().getStringArray(R.array.grievances1);
-                    } else if(i==1){
+                    } else if(i==2){
                         subcategories2 = mCon.getResources().getStringArray(R.array.grievances2);
                     }
                 }
@@ -185,7 +199,7 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
             mainCategorySpinner = view.findViewById(R.id.mainCategorySpinner);
             subCategorySpinner1 = view.findViewById(R.id.subCategorySpinner1);
             subCategorySpinner2 = view.findViewById(R.id.subCategorySpinner2);
-            updateWorkerDetails = view.findViewById(R.id.updateWorkerDetails);
+//            updateWorkerDetails = view.findViewById(R.id.updateWorkerDetails);
             comments = view.findViewById(R.id.comments);
 
         }
@@ -195,5 +209,56 @@ public class WorkersAdapter4A extends RecyclerView.Adapter<WorkersAdapter4A.MyVi
             workersList.addAll(lrModels);
             notifyDataSetChanged();
         }
+    }
+
+    public int getCatefgory3position(String value)
+    {
+        int pos = 0;
+        if(value.toUpperCase().equals("NO ISSUE"))
+            pos = 0;
+        else if(value.toUpperCase().equals("BENAMI"))
+            pos = 1;
+        else if(value.toUpperCase().equals("EXCESS MAN"))
+            pos = 2;
+        else if(value.toUpperCase().equals("FAKE MUSTER ROLLS"))
+            pos = 3;
+        else if(value.toUpperCase().equals("ADDITION OF NAMES AND MANDAYS IN MUSTER AFTER CLOSING"))
+            pos = 4;
+        else if(value.toUpperCase().equals("DELETION OF NAMES AND MANDAYS IN MUSTER AFTER CLOSING"))
+            pos = 5;
+        return pos;
+    }
+
+    public int getCatefgory2position(String value)
+    {
+        int pos = 0;
+
+        if(value.toUpperCase().equals("NO ISSUE"))
+            pos = 0;
+        else if(value.toUpperCase().equals("MUSTER RELATED"))
+            pos = 1;
+        else if(value.toUpperCase().equals("WORK RELATED "))
+            pos = 2;
+        else if(value.toUpperCase().equals("PAYMENT RELATED"))
+            pos = 3;
+        return pos;
+    }
+
+
+    public int getCatefgory1position(String value)
+    {
+        int pos = 0;
+
+        if(value.toUpperCase().equals("NO ISSUE"))
+            pos = 0;
+        else if(value.toUpperCase().equals("FINANCIAL"))
+            pos = 1;
+        else if(value.toUpperCase().equals("PROCEDURAL"))
+            pos = 2;
+        else if(value.toUpperCase().equals("INFORMATION"))
+            pos = 3;
+        else if(value.toUpperCase().equals("GRIEVANCES"))
+            pos = 4;
+        return pos;
     }
 }

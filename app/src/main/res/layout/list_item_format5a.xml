@@ -5,15 +5,10 @@
     android:background="#ff0173ba"
     android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#000" />
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/colorPrimaryDark">
 
         <TableRow
             android:layout_width="match_parent"
@@ -22,9 +17,10 @@
             <TextView
                 android:id="@+id/serialNo"
                 android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:text="1"
                 android:textColor="#ff00adef"
                 android:textSize="14sp"
@@ -32,300 +28,219 @@
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <TextView
                 android:id="@+id/work_code"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:text=""
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <TextView
                 android:id="@+id/allWorkDetails"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:text="171595()/NADEP Compost Pit/Vijayalakshmi kota"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <TextView
                 android:id="@+id/taskDetails"
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:text="task"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <TextView
                 android:id="@+id/techType"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:text="tech"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <TextView
                 android:id="@+id/ap_measure"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:text=""
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <TextView
                 android:id="@+id/ap_total"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:text=""
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <TextView
                 android:id="@+id/amb_measure"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
 
             <TextView
                 android:id="@+id/amb_total"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
             <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
                 android:background="@drawable/edittextborder"
                 android:orientation="vertical">
 
                 <Spinner
                     android:id="@+id/isworkDoneSpinner"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:entries="@array/yesno"/>
             </LinearLayout>
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
             <EditText
                 android:id="@+id/cv_measure"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
             <EditText
                 android:id="@+id/cv_total"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
-                android:textSize="14sp"
-                android:textStyle="normal"
-                android:typeface="sans"
-                android:visibility="visible" />
-            <View
-                android:layout_width="1dp"
+                android:layout_width="98dp"
                 android:layout_height="match_parent"
-                android:background="#000" />
-            <EditText
-                android:id="@+id/diff_measure"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
-                android:textSize="14sp"
-                android:textStyle="normal"
-                android:typeface="sans"
-                android:visibility="visible" />
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-            <EditText
-                android:id="@+id/diff_total"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
+            <EditText
+                android:id="@+id/diff_measure"
+                android:layout_width="119dp"
                 android:layout_height="match_parent"
-                android:background="#000" />
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/diff_total"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:visibility="visible" />
 
             <EditText
                 android:id="@+id/respPersonName"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
 
             <EditText
                 android:id="@+id/respPersonDesig"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
+
             <EditText
                 android:id="@+id/imp_of_work"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:typeface="sans"
                 android:visibility="visible" />
-            
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
 
             <EditText
                 android:id="@+id/comments"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@color/white"
                 android:textSize="14sp"
                 android:textStyle="normal"
                 android:hint="comments"
                 android:typeface="sans"
                 android:visibility="visible" />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#000" />
-
-
-            <Button
-                android:id="@+id/updateWorkerDetails"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/square_fill_button"
-                android:text="Save"
-                android:textColor="@color/white" />
-
         </TableRow>
 
     </TableLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#000" />
 
 </LinearLayout>

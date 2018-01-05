@@ -83,59 +83,59 @@ public class WorkersAdapter5A extends RecyclerView.Adapter<WorkersAdapter5A.MyVi
         holder.imp_of_work.setText(worksite.getImpofwork());
         holder.comments.setText(worksite.getComments());
 
-        holder.updateWorkerDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try{
-                    String created_time = "";
-                    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:SS");
-                    Calendar cal = Calendar.getInstance();
-                    System.out.println("created timestamp"+dateFormat.format(cal.getTime()));
-                    //created_time = dateFormat.format(cal.getTime());
-                    created_time = dateFormat.format(cal.getTime());
-                    mDatabase = mCon.openOrCreateDatabase(CSVParsing.DATABASE_NAME, MODE_PRIVATE, null);
-
-//                    String insertSQL = "INSERT INTO format5A \n" +
-//                            "(sno, work_code , work_details, task_details,technology_type,approved_ev_measurements,approved_ev_total ," +
-//                            "aspermb_report_measurements,aspermb_report_total,is_work_done,chechvalues_measurements," +
-//                            "chechvalues_total, difference_measurements, difference_total, respPersonName,respPersonDesig," +
-//                            "imp_of_work, comments, created_date, created_by, modified_date,modified_by,isActive)\n" +
-//                            "VALUES \n" +
-//                            "(?, ?, ?,?,?, ?, ?,?,?, ?, ?,?, ?, ?,?,?, ?,?,?,?,?, ?,?);";
-//                    mDatabase.execSQL(insertSQL,
-//                            new String[]{
-                    long result = dalWorksiteResults.insertOrUpdateWorksiteResultData(mDatabase,
-                                    holder.serialNo.getText().toString(),
-                                    holder.work_code.getText().toString(),
-                                    holder.allWorkDetails.getText().toString(),
-                                    holder.taskDetails.getText().toString(),
-                                    holder.techType.getText().toString(),
-                                    holder.ap_measure.getText().toString(),
-                                    holder.ap_total.getText().toString(),
-                                    holder.amb_measure.getText().toString(),
-                                    holder.amb_total.getText().toString(),
-                                    holder.isworkDoneSpinner.getSelectedItem().toString(),
-                                    holder.cv_measure.getText().toString(),
-                                    holder.cv_total.getText().toString(),
-                                    holder.diff_measure.getText().toString(),
-                                    holder.diff_total.getText().toString(),
-                                    holder.respPersonName.getText().toString(),
-                                    holder.respPersonDesig.getText().toString(),
-                                    holder.imp_of_work.getText().toString(),
-                                    holder.comments.getText().toString(),
-                                    created_time,
-                            Constants.userMasterDO.userName,new SimpleDateFormat("yyyy-MM-dd HH:mm:SS").format(new Date()), Constants.userMasterDO.userName,""
-                                    ,worksite.getTask_code());
-
-                    if(result != 0 && result != -1)
-                        Toast.makeText(mCon,"Details saved successfully",Toast.LENGTH_SHORT).show();
-                    else
-                        Toast.makeText(mCon,"Failed to save details",Toast.LENGTH_SHORT).show();
-                }catch (SQLiteException error){
-                    Toast.makeText(mCon,"Failed to save details",Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+//        holder.updateWorkerDetails.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                try{
+//                    String created_time = "";
+//                    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:SS");
+//                    Calendar cal = Calendar.getInstance();
+//                    System.out.println("created timestamp"+dateFormat.format(cal.getTime()));
+//                    //created_time = dateFormat.format(cal.getTime());
+//                    created_time = dateFormat.format(cal.getTime());
+//                    mDatabase = mCon.openOrCreateDatabase(CSVParsing.DATABASE_NAME, MODE_PRIVATE, null);
+//
+////                    String insertSQL = "INSERT INTO format5A \n" +
+////                            "(sno, work_code , work_details, task_details,technology_type,approved_ev_measurements,approved_ev_total ," +
+////                            "aspermb_report_measurements,aspermb_report_total,is_work_done,chechvalues_measurements," +
+////                            "chechvalues_total, difference_measurements, difference_total, respPersonName,respPersonDesig," +
+////                            "imp_of_work, comments, created_date, created_by, modified_date,modified_by,isActive)\n" +
+////                            "VALUES \n" +
+////                            "(?, ?, ?,?,?, ?, ?,?,?, ?, ?,?, ?, ?,?,?, ?,?,?,?,?, ?,?);";
+////                    mDatabase.execSQL(insertSQL,
+////                            new String[]{
+//                    long result = dalWorksiteResults.insertOrUpdateWorksiteResultData(mDatabase,
+//                                    holder.serialNo.getText().toString(),
+//                                    holder.work_code.getText().toString(),
+//                                    holder.allWorkDetails.getText().toString(),
+//                                    holder.taskDetails.getText().toString(),
+//                                    holder.techType.getText().toString(),
+//                                    holder.ap_measure.getText().toString(),
+//                                    holder.ap_total.getText().toString(),
+//                                    holder.amb_measure.getText().toString(),
+//                                    holder.amb_total.getText().toString(),
+//                                    holder.isworkDoneSpinner.getSelectedItem().toString(),
+//                                    holder.cv_measure.getText().toString(),
+//                                    holder.cv_total.getText().toString(),
+//                                    holder.diff_measure.getText().toString(),
+//                                    holder.diff_total.getText().toString(),
+//                                    holder.respPersonName.getText().toString(),
+//                                    holder.respPersonDesig.getText().toString(),
+//                                    holder.imp_of_work.getText().toString(),
+//                                    holder.comments.getText().toString(),
+//                                    created_time,
+//                            Constants.userMasterDO.userName,new SimpleDateFormat("yyyy-MM-dd HH:mm:SS").format(new Date()), Constants.userMasterDO.userName,""
+//                                    ,worksite.getTask_code());
+//
+//                    if(result != 0 && result != -1)
+//                        Toast.makeText(mCon,"Details saved successfully",Toast.LENGTH_SHORT).show();
+//                    else
+//                        Toast.makeText(mCon,"Failed to save details",Toast.LENGTH_SHORT).show();
+//                }catch (SQLiteException error){
+//                    Toast.makeText(mCon,"Failed to save details",Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
 
     }
 
@@ -171,7 +171,7 @@ public class WorkersAdapter5A extends RecyclerView.Adapter<WorkersAdapter5A.MyVi
             respPersonDesig = view.findViewById(R.id.respPersonDesig);
             imp_of_work = view.findViewById(R.id.imp_of_work);
             comments = view.findViewById(R.id.comments);
-            updateWorkerDetails = view.findViewById(R.id.updateWorkerDetails);
+//            updateWorkerDetails = view.findViewById(R.id.updateWorkerDetails);
         }
 
         public void setFilter(List<WorkSitePOJO> lrModels) {

@@ -256,7 +256,8 @@ String format4A = "CREATE TABLE IF NOT EXISTS format4A (\n" +
         "    modified_date varchar(200) NOT NULL,\n" +
         "    modified_by varchar(200) NOT NULL,\n" +
         "    isActive varchar(200) NOT NULL,\n" +
-        "    serverflag varchar(200)\n" +
+        "    serverflag varchar(200),\n" +
+        "    worker_code varchar(200)\n" +
         ");";
 String format5A = "CREATE TABLE IF NOT EXISTS format5A (\n" +
         "    id INTEGER NOT NULL CONSTRAINT format5A_pk PRIMARY KEY AUTOINCREMENT,\n" +
